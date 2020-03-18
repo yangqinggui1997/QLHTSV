@@ -1,0 +1,1 @@
+ql_tin_nhan.blade.php

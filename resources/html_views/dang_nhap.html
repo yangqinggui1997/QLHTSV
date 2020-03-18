@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hệ thống quản lý học tập sinh viên - Trường Đại học An Giang">
+  <meta name="keywords" content="QLHTSV">
+  <meta name="author" content="Yang Qing Gui">
+  <title>HỆ THỐNG QL HỌC TẬP SINH VIÊN! | ĐẠI HỌC AN GIANG</title>
+
+  <!-- Bootstrap -->
+  <link rel="shortcut icon" href="resources/images/favicon.ico" type="image/ico" media="all" />
+  <link href="resources/bootstraps/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="all">
+  <!-- Font Awesome -->
+  <link href="resources/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" media="all">
+  <!-- NProgress -->
+  <link href="resources/bootstraps/nprogress/nprogress.css" rel="stylesheet" media="all">
+  
+  <!-- Custom Theme Style -->
+  <link href="resources/css/custom.min.css" rel="stylesheet" media="all">
+</head>
+
+<body class="login">
+  <div>
+    <div class="login_wrapper">
+      <div class="animate form login_form">
+        <section class="login_content">
+          <form method="post">
+            <h1>ĐĂNG NHẬP</h1>
+              <div>
+                <input type="email" class="form-control" placeholder="Email" required="" name="tenTaiKhoan" value="" />
+              </div>
+              <div>
+                <input type="password" class="form-control" placeholder="Mật khẩu" required="" name="matKhau" value="" />
+              </div>
+              <div>
+                <div style="float: left; width: 100%; margin-bottom: 10px" id="div__id__ghiNhoDN">
+                  <input style="float: left; margin-right: 7px" type="checkbox" name="ghiNhoDangNhap"><span style="float: left; line-height: 2;font-size: 13px;"> Ghi nhớ thông tin đăng nhập.</span>
+                </div>
+              <button class="btn btn-success submit" id="button__id__submit">DO</button>
+              <a class="reset_pass" href="#">Quên mật khẩu?</a>
+            </div>
+            <div class="clearfix"></div>
+              <div class="alert alert-danger alert-dismissible fade in" role="alert" style="text-shadow: none;">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span>
+                </button> Nếu có lỗi
+              </div>
+            <div class="separator">
+              <div class="clearfix"></div>
+              <br />
+
+              <div>
+                <h1><i class="fa fa-paw"></i> Hệ Thống QL Học Tập SV!</h1>
+                <p> Khoa Công Nghệ Thông Tin - Đại học An Giang.</p>
+                <p>©2019 All Rights Reserved.</p>
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+  </div>
+  <!-- jQuery -->
+  <script src="resources/js/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="resources/bootstraps/bootstrap/dist/js/bootstrap.min.js"></script>  
+  <!-- NProgress -->
+  <script src="resources/bootstraps/nprogress/nprogress.js"></script>
+  <!-- Custom Theme Scripts -->
+  <script src="resources/js/custom.min.js"></script>
+  <script>
+    $(function(){
+        $('#div__id__ghiNhoDN').on('click', function(e){
+            if($('[name="ghiNhoDangNhap"]').prop('checked'))
+                $('[name="ghiNhoDangNhap"]').prop('checked', false);
+            else
+                $('[name="ghiNhoDangNhap"]').prop('checked', true);
+        });
+
+        $('[name="ghiNhoDangNhap"]').on('mousedown', function(){
+            $('#div__id__ghiNhoDN').unbind('click');
+        });
+
+        $('[name="ghiNhoDangNhap"]').on('mouseout', function(){
+            $('#div__id__ghiNhoDN').bind('click', function(e){
+                if($('[name="ghiNhoDangNhap"]').prop('checked'))
+                    $('[name="ghiNhoDangNhap"]').prop('checked', false);
+                else
+                    $('[name="ghiNhoDangNhap"]').prop('checked', true);
+            });
+        });
+
+        $('#button__id__submit').on('mouseenter', function(){$(this).addClass('aminateZoom');});
+        $('#button__id__submit').on('mouseout', function(){$(this).removeClass('aminateZoom');});
+    });
+  </script>
+</body>
+</html>

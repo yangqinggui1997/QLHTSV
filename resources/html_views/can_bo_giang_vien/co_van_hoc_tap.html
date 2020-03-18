@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hệ thống quản lý học tập sinh viên - Trường Đại học An Giang">
+    <meta name="keywords" content="QLHTSV">
+    <meta name="author" content="Yang Qing Gui">
+    <meta name="_token" content="">
+
+    <title>KHU VỰC CÁN BỘ / GIẢNG VIÊN - CỐ VẤN HỌC TẬP | HỆ THỐNG QUẢN LÝ HỌC TẬP SINH VIÊN</title>
+
+    <!-- Phần chung -->
+    <!-- Bootstrap -->
+    <link rel="shortcut icon" href="../resources/images/favicon.ico" type="image/ico" media="all"/>
+    <link href="../resources/bootstraps/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="all">
+    <!-- Font Awesome -->
+    <link href="../resources/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- NProgress -->
+    <link href="../resources/bootstraps/nprogress/nprogress.css" rel="stylesheet" media="all">
+
+    <!-- jQuery custom content scroller -->
+    <link href="../resources/bootstraps/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet" media="all"/>
+    
+    <!-- ALertify JS -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="../resources/bootstraps/alertifyjs/css/alertify.min.css" media="all"/>
+    <!-- Default theme -->
+    <link rel="stylesheet" href="../resources/bootstraps/alertifyjs/css/themes/default.min.css" media="all"/>
+    <!-- Semantic UI theme -->
+    <link rel="stylesheet" href="../resources/bootstraps/alertifyjs/css/themes/semantic.min.css" media="all"/>
+
+    <!-- Phần riêng -->
+    <!-- Datatables -->
+	<link href="../resources/bootstraps/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet" media="all">
+	<link href="../resources/bootstraps/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet" media="all">
+
+    <!-- x-editor CSS -->
+    <link rel="stylesheet" href="../resources/bootstraps/editable/css/bootstrap-editable.css" media="all">
+    <link rel="stylesheet" href="../resources/bootstraps/editable/css/x-editor-style.css" media="all">
+
+    <!-- Phần chung -->
+    <!-- Custom Theme Style -->
+    <link href="../resources/css/custom.min.css" rel="stylesheet" media="all">
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+        <div class="main_container">
+			<!-- Left Menu -->
+			<div class="col-md-3 left_col" id="div__id__left_menu">
+			  <div class="left_col scroll-view">
+			    <div class="navbar nav_title" style="border: 0;">
+			      <a href="{{ url('/') }}" class="site_title"><i class="fa fa-paw"></i> <span>HTQLHTSV!</span></a>
+			    </div>
+
+			    <div class="clearfix"></div>
+
+			    <!-- menu profile quick info -->
+			    <div class="profile clearfix">
+			      <div class="profile_pic">
+			        <img src="../resources/images/user.png" alt="Ảnh lớp" class="img-circle profile_img">
+			      </div>
+			      <div class="profile_info">
+			        <span>Welcome,</span>
+			        <h2>User</h2>
+			      </div>
+			    </div>
+			    <!-- /menu profile quick info -->
+
+			    <br />
+
+			    <!-- sidebar menu -->
+			    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+				    <div class="menu_section">
+						<h3>General</h3>
+						<ul class="nav side-menu">
+						  <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+						    <ul class="nav child_menu">
+						      <li><a href="index.html">Dashboard</a></li>
+						      <li><a href="index2.html">Dashboard2</a></li>
+						      <li><a href="index3.html">Dashboard3</a></li>
+						    </ul>
+						  </li>
+						  <li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>
+						    <ul class="nav child_menu">
+						      <li><a href="form.html">General Form</a></li>
+						      <li><a href="form_advanced.html">Advanced Components</a></li>
+						      <li><a href="form_validation.html">Form Validation</a></li>
+						      <li><a href="form_wizards.html">Form Wizard</a></li>
+						      <li><a href="form_upload.html">Form Upload</a></li>
+						      <li><a href="form_buttons.html">Form Buttons</a></li>
+						    </ul>
+						  </li>
+						  <li><a><i class="fa fa-desktop"></i> UI Elements <span class="fa fa-chevron-down"></span></a>
+						    <ul class="nav child_menu">
+						      <li><a href="general_elements.html">General Elements</a></li>
+						      <li><a href="media_gallery.html">Media Gallery</a></li>
+						      <li><a href="typography.html">Typography</a></li>
+						      <li><a href="icons.html">Icons</a></li>
+						      <li><a href="glyphicons.html">Glyphicons</a></li>
+						      <li><a href="widgets.html">Widgets</a></li>
+						      <li><a href="invoice.html">Invoice</a></li>
+						      <li><a href="inbox.html">Inbox</a></li>
+						      <li><a href="calendar.html">Calendar</a></li>
+						    </ul>
+						  </li>
+						  <li><a><i class="fa fa-table"></i> Tables <span class="fa fa-chevron-down"></span></a>
+						    <ul class="nav child_menu">
+						      <li><a href="tables.html">Tables</a></li>
+						      <li><a href="tables_dynamic.html">Table Dynamic</a></li>
+						    </ul>
+						  </li>
+						  <li><a><i class="fa fa-bar-chart-o"></i> Data Presentation <span class="fa fa-chevron-down"></span></a>
+						    <ul class="nav child_menu">
+						      <li><a href="chartjs.html">Chart JS</a></li>
+						      <li><a href="chartjs2.html">Chart JS2</a></li>
+						      <li><a href="morisjs.html">Moris JS</a></li>
+						      <li><a href="echarts.html">ECharts</a></li>
+						      <li><a href="other_charts.html">Other Charts</a></li>
+						    </ul>
+						  </li>
+						  <li><a><i class="fa fa-clone"></i>Layouts <span class="fa fa-chevron-down"></span></a>
+						    <ul class="nav child_menu">
+						      <li><a href="fixed_sidebar.html">Fixed Sidebar</a></li>
+						      <li><a href="fixed_footer.html">Fixed Footer</a></li>
+						    </ul>
+						  </li>
+						</ul>
+					</div>
+					<div class="menu_section">
+						<h3>Live On</h3>
+						<ul class="nav side-menu">
+						  <li><a><i class="fa fa-bug"></i> Additional Pages <span class="fa fa-chevron-down"></span></a>
+						    <ul class="nav child_menu">
+						      <li><a href="e_commerce.html">E-commerce</a></li>
+						      <li><a href="projects.html">Projects</a></li>
+						      <li><a href="project_detail.html">Project Detail</a></li>
+						      <li><a href="contacts.html">Contacts</a></li>
+						      <li><a href="profile.html">Profile</a></li>
+						    </ul>
+						  </li>
+						  <li><a><i class="fa fa-windows"></i> Extras <span class="fa fa-chevron-down"></span></a>
+						    <ul class="nav child_menu">
+						      <li><a href="page_403.html">403 Error</a></li>
+						      <li><a href="page_404.html">404 Error</a></li>
+						      <li><a href="page_500.html">500 Error</a></li>
+						      <li><a href="plain_page.html">Plain Page</a></li>
+						      <li><a href="login.html">Login Page</a></li>
+						      <li><a href="pricing_tables.html">Pricing Tables</a></li>
+						    </ul>
+						  </li>
+						  <li><a><i class="fa fa-sitemap"></i> Multilevel Menu <span class="fa fa-chevron-down"></span></a>
+						    <ul class="nav child_menu">
+						        <li><a href="#level1_1">Level One</a>
+						        <li><a>Level One<span class="fa fa-chevron-down"></span></a>
+						          <ul class="nav child_menu">
+						            <li class="sub_menu"><a href="level2.html">Level Two</a>
+						            </li>
+						            <li><a href="#level2_1">Level Two</a>
+						            </li>
+						            <li><a href="#level2_2">Level Two</a>
+						            </li>
+						          </ul>
+						        </li>
+						        <li><a href="#level1_2">Level One</a>
+						        </li>
+						    </ul>
+						  </li>                  
+						  <li><a href="javascript:void(0)"><i class="fa fa-laptop"></i> Landing Page <span class="label label-success pull-right">Coming Soon</span></a></li>
+						</ul>
+					</div>
+			  	</div>
+			    <!-- /sidebar menu -->
+
+			    <!-- /menu footer buttons -->
+			    <div class="sidebar-footer hidden-small">
+			      <a data-toggle="tooltip" data-original-title="Cài đặt" class="a__class__caiDat">
+			        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+			      </a>
+			      <a data-toggle="tooltip" data-original-title="Toàn màn hình" id="a__id__toanManHinh">
+			        <span id="span__id__toanManHinh" class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+			      </a>
+			      <a data-toggle="tooltip" data-original-title="Lên đầu trang" id="a__id__lenDauTrang">
+			        <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+			      </a>
+			      <a data-toggle="tooltip" data-original-title="Khoá menu" id="a__id__khoaMenu">
+			        <span id="span__id__khoaMenu" class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+			      </a>
+			      <a data-toggle="tooltip" data-original-title="Đăng xuất" href="../dang_nhap.html" id="a__id__dangXuat">
+			        <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+			      </a>
+			    </div>
+			    <!-- /menu footer buttons -->
+			  </div>
+			</div>
+
+			<!-- top navigation -->
+			<div class="top_nav" id="div__id__top_nav">
+			  <div class="nav_menu" id="div__id__nav_menu">
+			    <nav>
+			      <div class="nav toggle">
+			        <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+			      </div>
+
+			      <ul class="nav navbar-nav navbar-right">
+			        <li class="">
+			          <a href="javascript:void(0);" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+			            <img src="../resources/images/user.png" alt="Ảnh lớp">User<span class=" fa fa-angle-down"></span>
+			          </a>
+			          <ul class="dropdown-menu dropdown-usermenu pull-right">
+			            <li><a href="javascript:void(0)"> Profile</a></li>
+			            <li>
+			              <a href="javascript:void(0)">
+			                <span class="badge bg-red pull-right">50%</span>
+			                <span>Settings</span>
+			              </a>
+			            </li>
+			            <li><a href="javascript:void(0)">Help</a></li>
+			            <li><a href="../dang_nhap.html"><i class="fa fa-sign-out pull-right"></i> Đăng xuất</a></li>
+			          </ul>
+			        </li>
+
+			        <li role="presentation" class="dropdown">
+			          <a href="javascript:void(0)" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+			            <i class="fa fa-envelope-o"></i>
+			            <span class="badge bg-green">6</span>
+			          </a>
+			          <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+			            <li>
+			              <a>
+			                <span class="image"><img src="../resources/images/img.jpg" alt="Profile Image" /></span>
+			                <span>
+			                  <span>John Smith</span>
+			                  <span class="time">3 mins ago</span>
+			                </span>
+			                <span class="message">
+			                  Film festivals used to be do-or-die moments for movie makers. They were where...
+			                </span>
+			              </a>
+			            </li>
+			            <li>
+			              <a>
+			                <span class="image"><img src="../resources/images/img.jpg" alt="Profile Image" /></span>
+			                <span>
+			                  <span>John Smith</span>
+			                  <span class="time">3 mins ago</span>
+			                </span>
+			                <span class="message">
+			                  Film festivals used to be do-or-die moments for movie makers. They were where...
+			                </span>
+			              </a>
+			            </li>
+			            <li>
+			              <a>
+			                <span class="image"><img src="../resources/images/img.jpg" alt="Profile Image" /></span>
+			                <span>
+			                  <span>John Smith</span>
+			                  <span class="time">3 mins ago</span>
+			                </span>
+			                <span class="message">
+			                  Film festivals used to be do-or-die moments for movie makers. They were where...
+			                </span>
+			              </a>
+			            </li>
+			            <li>
+			              <a>
+			                <span class="image"><img src="../resources/images/img.jpg" alt="Profile Image" /></span>
+			                <span>
+			                  <span>John Smith</span>
+			                  <span class="time">3 mins ago</span>
+			                </span>
+			                <span class="message">
+			                  Film festivals used to be do-or-die moments for movie makers. They were where...
+			                </span>
+			              </a>
+			            </li>
+			            <li>
+			              <div class="text-center">
+			                <a>
+			                  <strong>See All Alerts</strong>
+			                  <i class="fa fa-angle-right"></i>
+			                </a>
+			              </div>
+			            </li>
+			          </ul>
+			        </li>
+			      </ul>
+			    </nav>
+			  </div>
+			</div>
+			<!-- /top navigation -->
+
+			<!-- page content -->
+			<div class="right_col" role="main" id="div__id__right_col">
+			  	<div class="">
+					<div class="row">
+						<!-- Danh sách chương trình đào tạo theo từng học kỳ 
+							Khi click xem tiến độ học tập thì lấy dữ liệu từ sever đỗ lên bảng -->
+					  	<div class="col-md-12 col-sm-12 col-xs-12" id="div__id__tienDoHT" style="display: none">
+							<div class="x_panel">
+							  	<div class="x_title">
+							    	<h2 id="h2__id__tienDoHT">TIẾN ĐỘ HỌC TẬP CỦA SINH VIÊN ... - MÃSV</h2>
+							    	<ul class="nav navbar-right panel_toolbox">
+							    		<li><a class="close-link"><i class="fa fa-close"></i></a>
+							    		</li>
+							      		<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+							      		</li>
+							    	</ul>
+							    	<div class="clearfix"></div>
+							  	</div>
+						  		<div class="x_content" style="overflow-y: hidden;">
+						  			<div class="row">
+						  				<div class="col-sm-12">
+						  					<!-- tạo table = script -->
+											<table id="table__id__tienDoHT" class="table table-striped table-bordered bulk_action">
+									      		<thead>
+									        		<tr>
+											          	<th>#</th>
+											          	<th>năm học</th>
+											          	<th>học kỳ</th>
+											          	<th>mã học phần</th>
+											          	<th>học phần</th>
+											          	<th>loại học phần</th>
+											          	<th>Điểm chữ</th>
+											          	<th>Đánh giá</th>
+											        </tr>
+											    </thead>
+											    <tbody id="tbody__id__tienDoHT">
+												    <tr>
+												        <td>1</td>
+												        <td></td>
+												        <td></td>
+												        <td></td>
+												        <td></td>
+												        <td></td>
+												        <td></td>
+												        <td></td>
+												    </tr>
+											    </tbody>
+									    	</table>
+						  				</div>
+						  			</div>
+						  		</div>
+							</div>
+						</div>
+
+						<!-- Danh sách kết quả học tập rèn luyện qua các học kỳ -->
+					  	<div class="col-md-12 col-sm-12 col-xs-12" id="div__id__ketQuaHTRL" style="display: none;">
+							<div class="x_panel">
+							  	<div class="x_title">
+							    	<h2 id="h2__id__ketQuaHTRL">KẾT QUẢ HỌC TẬP / RÈN LUYỆN CỦA SINH VIÊN [TENSINHVIEN - MASINHVIEN]</h2>
+							    	<ul class="nav navbar-right panel_toolbox">
+							    		<li><a class="close-link"><i class="fa fa-close"></i></a>
+							    		</li>
+							      		<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+							      		</li>
+							    	</ul>
+							    	<div class="clearfix"></div>
+							  	</div>
+						  		<div class="x_content" style="overflow-y: hidden;">
+						  			<div class="row">
+						  				<div class="col-sm-12" id="div__id__ketQuaHTRLArea">
+											<table id="table__id__ketQuaHTRL" class="table table-striped table-bordered bulk_action x-editor-custom">
+						                		<!-- nội dung bảng tạo bằng JS -->
+						                		<!-- kết quả học tập -->
+						                      	<thead>
+						                        	<tr>
+							                          	<th data-toggle="tooltip" data-original-title="Năm học" rowspan="2">NH</th>
+							                          	<th data-toggle="tooltip" data-original-title="Học kỳ" rowspan="2">HK</th>
+							                          	<th data-toggle="tooltip" data-original-title="Học phần" rowspan="2">HP</th>
+							                          	<th data-toggle="tooltip" data-original-title="Số tín chỉ" rowspan="2">STC</th>
+							                          	<th data-toggle="tooltip" data-original-title="Giảng viên giảng dạy" rowspan="2">GVGD</th>
+							                          	<th data-toggle="tooltip" data-original-title="Phần trăm điểm thường xuyên" rowspan="2">% ĐTX</th>
+							                          	<th data-toggle="tooltip" data-original-title="Phần trăm điểm thi" rowspan="2">% ĐT</th>
+							                          	<th data-toggle="tooltip" data-original-title="Điểm kiểm tra dưới 1 tiết" colspan="5">Đ<1T</th>
+							                          	<th data-toggle="tooltip" data-original-title="Điểm kiểm tra từ 1 tiết trở lên" colspan="5">Đ>=1T</th>
+							                          	<th data-toggle="tooltip" data-original-title="Điểm thường xuyên" rowspan="2">ĐTX</th>
+							                          	<th data-toggle="tooltip" data-original-title="Điểm thi" colspan="3">ĐT</th>
+							                          	<th data-toggle="tooltip" data-original-title="Điểm trung bình hệ 10" rowspan="2">ĐTBH10</th>
+							                          	<th data-toggle="tooltip" data-original-title="Điểm trung bình hệ 4" rowspan="2">ĐTBH4</th>
+							                          	<th data-toggle="tooltip" data-original-title="Điểm chữ" rowspan="2">ĐC</th>
+						                        	</tr>
+						                        	<tr>
+						                          		<th data-toggle="tooltip" data-original-title="Lần 1">Đ<1T 1</th><th data-toggle="tooltip" data-original-title="Lần 2">Đ<1T 2</th><th data-toggle="tooltip" data-original-title="Lần 3">Đ<1T 3</th>
+		                          						<th data-toggle="tooltip" data-original-title="Lần 4">Đ<1T 4</th><th data-toggle="tooltip" data-original-title="Lần 5">Đ<1T 5</th>
+		                          						<th data-toggle="tooltip" data-original-title="Lần 1">Đ>=1T 1</th><th data-toggle="tooltip" data-original-title="Lần 2">Đ>=1T 2</th><th data-toggle="tooltip" data-original-title="Lần 3">Đ>=1T 3</th>
+		                          						<th data-toggle="tooltip" data-original-title="Lần 4">Đ>=1T 4</th><th data-toggle="tooltip" data-original-title="Lần 5">Đ>=1T 5</th>
+		                          						<th data-toggle="tooltip" data-original-title="Lần 1">ĐT 1</th>
+		                          						<th data-toggle="tooltip" data-original-title="Lần 2">ĐT 2</th>
+		                          						<th data-toggle="tooltip" data-original-title="Lần 3">ĐT 3</th>
+		                          					</tr>
+						                      	</thead>
+						                      	<!-- kết quả rèn luyện -->
+						                      	<!-- <thead>
+						                        	<tr>
+							                          	<th data-toggle="tooltip" data-original-title="Năm học">NH</th>
+							                          	<th data-toggle="tooltip" data-original-title="Học kỳ">HK</th>
+							                          	<th data-toggle="tooltip" data-original-title="Tiêu chí đánh giá tổng quát">TCDGTQ</th>
+							                          	<th data-toggle="tooltip" data-original-title="Tiêu chí đánh giá chi tiết">TCDGCT</th>
+							                          	<th data-toggle="tooltip" data-original-title="Chi tiết tiêu chí đánh giá chi tiết">CTTCDGCT</th>
+							                          	<th data-toggle="tooltip" data-original-title="Điểm đánh giá của sinh viên">DDGCSV</th>
+							                          	<th data-toggle="tooltip" data-original-title="Điểm đánh giá của trường">DDGCT</th>
+						                        	</tr>
+						                      	</thead> -->
+						                      	<tbody>
+						                      		<!-- Đối với nội dung đánh giá điểm rèn luyện rowspan="tuỳ theo số lượng chi tiết của tổng quát". Cuối mỗi học kỳ cần có dòng tổng điểm-->
+						                			<tr>
+						                  				<td>2</td>
+						                  				<td></td>
+						                  				<td></td>
+						                  				<td></td>
+						                  				<td></td>
+						                  				<td></td>
+						                  				<td></td>
+						                  				<td></td>
+						                  				<td></td>
+						                  				<td>6</td>
+						                  				<td></td>
+						                  				<td></td>
+						                  				<td></td>
+						                  				<td></td>
+						                  				<td></td>
+						                  				<td></td>
+						                  				<td></td>
+						                  				<td></td>
+						                  				<td></td>
+						                  				<td></td>
+						                  				<td></td>
+						                  				<td></td>
+						                  				<td></td>
+						                  				<td></td>
+						                			</tr>
+						                      	</tbody>
+						                    </table>
+						  				</div>
+						  			</div>
+						  		</div>
+							</div>
+						</div>
+
+						<!-- Danh sách sinh viên -->
+					  	<div class="col-md-12 col-sm-12 col-xs-12">
+							<div class="x_panel">
+							  	<div class="x_title">
+							    	<h2>DANH SÁCH SINH VIÊN LỚP ...</h2>
+							    	<ul class="nav navbar-right panel_toolbox">
+							      		<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+							      		</li>
+							    	</ul>
+							    	<div class="clearfix"></div>
+							  	</div>
+						  		<div class="x_content" style="overflow-y: hidden;">
+						  			<div class="row">
+						  				<div class="col-sm-12">
+											<table id="table__id__sinhVien" class="table table-striped table-bordered bulk_action">
+									      		<thead>
+									        		<tr>
+											          	<th>#</th>
+											          	<th>mã sinh viên</th>
+											          	<th>SINH VIÊN</th>
+											          	<th>GIỚI TÍNH</th>
+											          	<th>NGÀY SINH</th>
+											          	<th>NƠI SINH</th><!-- CHỈ GHI TỈNH -->
+											          	<th>SĐT</th>
+											          	<th>EMAIL</th>
+											          	<th>KHỐI THI</th>
+											          	<th>ĐIỂM ĐẦU VÀO</th>
+											          	<th>TRẠNG THÁI</th>
+											          	<th>THAO TÁC</th>
+											        </tr>
+											    </thead>
+											    <tbody id="tbody__id__sinhVien">
+												    <tr>
+												        <td>df</td>
+												        <td></td>
+												        <td>sf</td>
+												        <td>sfs</td>
+												        <td></td>
+												        <td></td>
+												        <td></td>
+												        <td></td>
+												        <td></td>
+												        <td></td>
+												        <td></td>
+												        <td>
+												        	<div class="btn-group">
+									                            <button class="btn btn-sm btn-default" type="button" data-toggle="tooltip" data-original-title="Xem kết quả học tập của sinh viên" data-button="xemKQHTSV" data-button-maSinhVien="mã sinh viên" data-button-tenSinhVien=""><i class="glyphicon glyphicon-list"></i></button>
+									                            <button class="btn btn-sm btn-default" type="button" data-toggle="tooltip" data-original-title="Xem kết quả rèn luyện của sinh viên" data-button="xemKQRLSV" data-button-content="mã sinh viên" data-button-tenSinhVien=""><i class="glyphicon glyphicon-list-alt"></i></button>
+									                            <button class="btn btn-sm btn-default" type="button" data-toggle="tooltip" data-original-title="Xem tiến độ học tập" data-button="xemTienDoHT" data-button-content="mã sinh viên" data-button-tenSinhVien=""><i class="glyphicon glyphicon-queen"></i></button>
+								                          	</div>
+									                    </td>
+												    </tr>
+											    </tbody>
+									    	</table>
+						  				</div>
+						  			</div>
+						  		</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /page content -->
+			<!-- footer content -->
+	        <footer style="text-align: center;">
+	          <div class="pull-center">
+	            <h1><i class="fa fa-paw"></i> Hệ Thống Quản Lý Học Tập Sinh Viên!</h1>
+	          	<p> Khoa Công Nghệ Thông Tin - Đại học An Giang.</p>
+	          	<p>©2019 All Rights Reserved.</p>
+	          </div>
+	          <div class="clearfix"></div>
+	        </footer>
+	        <!-- /footer content -->
+	      </div>
+    </div>
+
+    <!-- Phần chung -->
+    <!-- jQuery -->
+    <script src="../resources/js/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../resources/bootstraps/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- NProgress -->
+    <script src="../resources/bootstraps/nprogress/nprogress.js"></script>
+
+    <!-- jQuery custom content scroller -->
+    <script src="../resources/bootstraps/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <!-- ALERTIFY JS -->
+    <script src="../resources/bootstraps/alertifyjs/alertify.min.js"></script>
+
+    <!-- Phần riêng -->
+    <!-- FastClick -->
+	<script src="../resources/js/fastclick/lib/fastclick.js"></script>
+	<!-- validator -->
+	<script src="../resources/bootstraps/validator/validator.js"></script>
+	<!-- Datatables -->
+	<script src="../resources/js/datatables.net/js/jquery.dataTables.min.js"></script>
+	<script src="../resources/bootstraps/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+	<script src="../resources/js/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+	<script src="../resources/bootstraps/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+	<script src="../resources/js/datatables.net-buttons/js/buttons.flash.min.js"></script>
+	<script src="../resources/js/datatables.net-buttons/js/buttons.html5.min.js"></script>
+	<script src="../resources/js/datatables.net-buttons/js/buttons.print.min.js"></script>
+	<script src="../resources/js/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+	<script src="../resources/js/pdfmake/build/pdfmake.min.js"></script>
+	<script src="../resources/js/pdfmake/build/vfs_fonts.js"></script>
+
+	<!-- bootstrap-daterangepicker -->
+    <script src="../resources/js/moment/min/moment.min.js"></script>
+    <script src="../resources/bootstraps/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!-- bootstrap-datetimepicker -->    
+    <script src="../resources/bootstraps/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+
+    <!--  editable JS -->
+    <script src="../resources/bootstraps/editable/js/bootstrap-editable.js"></script>
+    <!-- Phần chung -->
+    <!-- Custom Theme Scripts -->
+    <script src="../resources/js/custom.min.js"></script>
+   	<!-- Phần riêng -->
+    <!-- Các hàm dùng chung trong project -->
+    <script src="../resources/js/jsForViews/common.js"></script>
+    <!-- Khởi tạo side bar -->
+    <script src="../resources/js/jsForViews/khoi_tao_side_bar.js"></script>
+    <!-- Khởi tạo Form validate -->
+    <script src="../resources/js/jsForViews/khoi_tao_form_validator.js"></script>
+    <!-- Khởi tạo các chức năng thanh công cụ menu -->
+    <script src="../resources/js/jsForViews/thanh_cong_cu_menu.js"></script>
+	<!-- Khởi tạo data table -->
+    <script src="../resources/js/jsForViews/can_bo_giang_vien/co_van_hoc_tap/0_khoi_tao_dataTable_CVHT.js"></script>
+    <!-- Khởi tạo sự kiện click nút xem kết quả học tập -->
+    <script src="../resources/js/jsForViews/can_bo_giang_vien/co_van_hoc_tap/1_nut_xem_kqht.js"></script>
+    <!-- Khởi tạo sự kiện clcik nút xem kết quả rèn luyện -->
+    <script src="../resources/js/jsForViews/can_bo_giang_vien/co_van_hoc_tap/2_nut_xem_kqrl.js"></script>
+    <!-- Khởi tạo sự kiện click nút xem tiến độ học tập -->
+    <script src="../resources/js/jsForViews/can_bo_giang_vien/co_van_hoc_tap/3_nut_xem_tien_do_ht.js"></script>
+    <!-- Khởi tạo tooltip -->
+    <script src="../resources/js/jsForViews/khoi_tao_tooltip.js"></script>
+  </body>
+</html>

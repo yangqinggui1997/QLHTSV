@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	    <!-- Meta, title, CSS, favicons, etc. -->
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="description" content="Hệ thống quản lý học tập sinh viên - Trường Đại học An Giang">
+	    <meta name="keywords" content="QLHTSV">
+	    <meta name="author" content="Yang Qing Gui">
+	    <meta name="_token" content="">
+
+	    <title>KHU VỰC QUẢN TRỊ VIÊN - QUẢN LÝ BIỂU MẪU | HỆ THỐNG QUẢN LÝ HỌC TẬP SINH VIÊN</title>
+
+	    <!-- Phần chung -->
+	    <!-- Bootstrap -->
+	    <link rel="shortcut icon" href="../resources/images/favicon.ico" type="image/ico" media="all"/>
+	    <link href="../resources/bootstraps/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="all">
+	    <!-- Font Awesome -->
+	    <link href="../resources/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" media="all">
+	    <!-- NProgress -->
+	    <link href="../resources/bootstraps/nprogress/nprogress.css" rel="stylesheet" media="all">
+
+	    <!-- jQuery custom content scroller -->
+	    <link href="../resources/bootstraps/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet" media="all"/>
+	    
+	    <!-- ALertify JS -->
+	    <!-- CSS -->
+	    <link rel="stylesheet" href="../resources/bootstraps/alertifyjs/css/alertify.min.css" media="all"/>
+	    <!-- Default theme -->
+	    <link rel="stylesheet" href="../resources/bootstraps/alertifyjs/css/themes/default.min.css" media="all" />
+	    <!-- Semantic UI theme -->
+	    <link rel="stylesheet" href="../resources/bootstraps/alertifyjs/css/themes/semantic.min.css" media="all"/>
+
+	    <!-- Phần riêng -->
+	    <!-- Datatables -->
+		<link href="../resources/bootstraps/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet" media="all">
+		<link href="../resources/bootstraps/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet" media="all">
+
+		<!-- bootstrap-daterangepicker -->
+	    <link href="../resources/bootstraps/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+	    <!-- bootstrap-datetimepicker -->
+	    <link href="../resources/bootstraps/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css" rel="stylesheet">
+
+	    <!-- Phần chung -->
+	    <!-- Custom Theme Style -->
+	    <link href="../resources/css/custom.min.css" rel="stylesheet" media="all">
+	</head>
+
+  	<body class="nav-md" id="body">
+	    <div class="container body">
+	        <div class="main_container">
+				<!-- Left Menu -->
+				<div class="col-md-3 left_col" id="div__id__left_menu">
+				  <div class="left_col scroll-view">
+				    <div class="navbar nav_title" style="border: 0;">
+				      <a href="{{ url('/') }}" class="site_title"><i class="fa fa-paw"></i> <span>HTQLHTSV!</span></a>
+				    </div>
+
+				    <div class="clearfix"></div>
+
+				    <!-- menu profile quick info -->
+				    <div class="profile clearfix">
+				      <div class="profile_pic">
+				        <img src="../resources/images/user.png" alt="Ảnh người dùng" class="img-circle profile_img">
+				      </div>
+				      <div class="profile_info">
+				        <span>Welcome,</span>
+				        <h2>User</h2>
+				      </div>
+				    </div>
+				    <!-- /menu profile quick info -->
+
+				    <br />
+
+				    <!-- sidebar menu -->
+				    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+					    <div class="menu_section">
+							<h3>General</h3>
+							<ul class="nav side-menu">
+							  <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+							    <ul class="nav child_menu">
+							      <li><a href="index.html">Dashboard</a></li>
+							      <li><a href="index2.html">Dashboard2</a></li>
+							      <li><a href="index3.html">Dashboard3</a></li>
+							    </ul>
+							  </li>
+							  <li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>
+							    <ul class="nav child_menu">
+							      <li><a href="form.html">General Form</a></li>
+							      <li><a href="form_advanced.html">Advanced Components</a></li>
+							      <li><a href="form_validation.html">Form Validation</a></li>
+							      <li><a href="form_wizards.html">Form Wizard</a></li>
+							      <li><a href="form_upload.html">Form Upload</a></li>
+							      <li><a href="form_buttons.html">Form Buttons</a></li>
+							    </ul>
+							  </li>
+							  <li><a><i class="fa fa-desktop"></i> UI Elements <span class="fa fa-chevron-down"></span></a>
+							    <ul class="nav child_menu">
+							      <li><a href="general_elements.html">General Elements</a></li>
+							      <li><a href="media_gallery.html">Media Gallery</a></li>
+							      <li><a href="typography.html">Typography</a></li>
+							      <li><a href="icons.html">Icons</a></li>
+							      <li><a href="glyphicons.html">Glyphicons</a></li>
+							      <li><a href="widgets.html">Widgets</a></li>
+							      <li><a href="invoice.html">Invoice</a></li>
+							      <li><a href="inbox.html">Inbox</a></li>
+							      <li><a href="calendar.html">Calendar</a></li>
+							    </ul>
+							  </li>
+							  <li><a><i class="fa fa-table"></i> Tables <span class="fa fa-chevron-down"></span></a>
+							    <ul class="nav child_menu">
+							      <li><a href="tables.html">Tables</a></li>
+							      <li><a href="tables_dynamic.html">Table Dynamic</a></li>
+							    </ul>
+							  </li>
+							  <li><a><i class="fa fa-bar-chart-o"></i> Data Presentation <span class="fa fa-chevron-down"></span></a>
+							    <ul class="nav child_menu">
+							      <li><a href="chartjs.html">Chart JS</a></li>
+							      <li><a href="chartjs2.html">Chart JS2</a></li>
+							      <li><a href="morisjs.html">Moris JS</a></li>
+							      <li><a href="echarts.html">ECharts</a></li>
+							      <li><a href="other_charts.html">Other Charts</a></li>
+							    </ul>
+							  </li>
+							  <li><a><i class="fa fa-clone"></i>Layouts <span class="fa fa-chevron-down"></span></a>
+							    <ul class="nav child_menu">
+							      <li><a href="fixed_sidebar.html">Fixed Sidebar</a></li>
+							      <li><a href="fixed_footer.html">Fixed Footer</a></li>
+							    </ul>
+							  </li>
+							</ul>
+						</div>
+						<div class="menu_section">
+							<h3>Live On</h3>
+							<ul class="nav side-menu">
+							  <li><a><i class="fa fa-bug"></i> Additional Pages <span class="fa fa-chevron-down"></span></a>
+							    <ul class="nav child_menu">
+							      <li><a href="e_commerce.html">E-commerce</a></li>
+							      <li><a href="projects.html">Projects</a></li>
+							      <li><a href="project_detail.html">Project Detail</a></li>
+							      <li><a href="contacts.html">Contacts</a></li>
+							      <li><a href="profile.html">Profile</a></li>
+							    </ul>
+							  </li>
+							  <li><a><i class="fa fa-windows"></i> Extras <span class="fa fa-chevron-down"></span></a>
+							    <ul class="nav child_menu">
+							      <li><a href="page_403.html">403 Error</a></li>
+							      <li><a href="page_404.html">404 Error</a></li>
+							      <li><a href="page_500.html">500 Error</a></li>
+							      <li><a href="plain_page.html">Plain Page</a></li>
+							      <li><a href="login.html">Login Page</a></li>
+							      <li><a href="pricing_tables.html">Pricing Tables</a></li>
+							    </ul>
+							  </li>
+							  <li><a><i class="fa fa-sitemap"></i> Multilevel Menu <span class="fa fa-chevron-down"></span></a>
+							    <ul class="nav child_menu">
+							        <li><a href="#level1_1">Level One</a>
+							        <li><a>Level One<span class="fa fa-chevron-down"></span></a>
+							          <ul class="nav child_menu">
+							            <li class="sub_menu"><a href="level2.html">Level Two</a>
+							            </li>
+							            <li><a href="#level2_1">Level Two</a>
+							            </li>
+							            <li><a href="#level2_2">Level Two</a>
+							            </li>
+							          </ul>
+							        </li>
+							        <li><a href="#level1_2">Level One</a>
+							        </li>
+							    </ul>
+							  </li>                  
+							  <li><a href="javascript:void(0)"><i class="fa fa-laptop"></i> Landing Page <span class="label label-success pull-right">Coming Soon</span></a></li>
+							</ul>
+						</div>
+				  	</div>
+				    <!-- /sidebar menu -->
+
+				    <!-- /menu footer buttons -->
+				    <div class="sidebar-footer hidden-small">
+				      <a data-toggle="tooltip" data-original-title="Cài đặt" class="a__class__caiDat">
+				        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+				      </a>
+				      <a data-toggle="tooltip" data-original-title="Toàn màn hình" id="a__id__toanManHinh">
+				        <span id="span__id__toanManHinh" class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+				      </a>
+				      <a data-toggle="tooltip" data-original-title="Lên đầu trang" id="a__id__lenDauTrang">
+				        <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+				      </a>
+				      <a data-toggle="tooltip" data-original-title="Khoá menu" id="a__id__khoaMenu">
+				        <span id="span__id__khoaMenu" class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+				      </a>
+				      <a data-toggle="tooltip" data-original-title="Đăng xuất" href="../dang_nhap.html" id="a__id__dangXuat">
+				        <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+				      </a>
+				    </div>
+				    <!-- /menu footer buttons -->
+				  </div>
+				</div>
+
+				<!-- top navigation -->
+				<div class="top_nav" id="div__id__top_nav">
+				  <div class="nav_menu" id="div__id__nav_menu">
+				    <nav>
+				      <div class="nav toggle">
+				        <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+				      </div>
+
+				      <ul class="nav navbar-nav navbar-right">
+				        <li class="">
+				          <a href="javascript:void(0);" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+				            <img src="../resources/images/user.png" alt="Ảnh người dùng">User<span class=" fa fa-angle-down"></span>
+				          </a>
+				          <ul class="dropdown-menu dropdown-usermenu pull-right">
+				            <li><a href="javascript:;"> Profile</a></li>
+				            <li>
+				              <a href="javascript:;">
+				                <span class="badge bg-red pull-right">50%</span>
+				                <span>Settings</span>
+				              </a>
+				            </li>
+				            <li><a href="javascript:;">Help</a></li>
+				            <li><a href="../dang_nhap.html"><i class="fa fa-sign-out pull-right"></i> Đăng xuất</a></li>
+				          </ul>
+				        </li>
+
+				        <li role="presentation" class="dropdown">
+				          <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+				            <i class="fa fa-envelope-o"></i>
+				            <span class="badge bg-green">6</span>
+				          </a>
+				          <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+				            <li>
+				              <a>
+				                <span class="image"><img src="../resources/images/img.jpg" alt="Profile Image" /></span>
+				                <span>
+				                  <span>John Smith</span>
+				                  <span class="time">3 mins ago</span>
+				                </span>
+				                <span class="message">
+				                  Film festivals used to be do-or-die moments for movie makers. They were where...
+				                </span>
+				              </a>
+				            </li>
+				            <li>
+				              <a>
+				                <span class="image"><img src="../resources/images/img.jpg" alt="Profile Image" /></span>
+				                <span>
+				                  <span>John Smith</span>
+				                  <span class="time">3 mins ago</span>
+				                </span>
+				                <span class="message">
+				                  Film festivals used to be do-or-die moments for movie makers. They were where...
+				                </span>
+				              </a>
+				            </li>
+				            <li>
+				              <a>
+				                <span class="image"><img src="../resources/images/img.jpg" alt="Profile Image" /></span>
+				                <span>
+				                  <span>John Smith</span>
+				                  <span class="time">3 mins ago</span>
+				                </span>
+				                <span class="message">
+				                  Film festivals used to be do-or-die moments for movie makers. They were where...
+				                </span>
+				              </a>
+				            </li>
+				            <li>
+				              <a>
+				                <span class="image"><img src="../resources/images/img.jpg" alt="Profile Image" /></span>
+				                <span>
+				                  <span>John Smith</span>
+				                  <span class="time">3 mins ago</span>
+				                </span>
+				                <span class="message">
+				                  Film festivals used to be do-or-die moments for movie makers. They were where...
+				                </span>
+				              </a>
+				            </li>
+				            <li>
+				              <div class="text-center">
+				                <a>
+				                  <strong>See All Alerts</strong>
+				                  <i class="fa fa-angle-right"></i>
+				                </a>
+				              </div>
+				            </li>
+				          </ul>
+				        </li>
+				      </ul>
+				    </nav>
+				  </div>
+				</div>
+				<!-- /top navigation -->
+
+				<!-- page content -->
+				<div class="right_col" role="main" id="div__id__right_col">
+				  	<div class="">
+						<div class="row">
+							<!-- Modal thêm các thuộc tính cho trường biểu mẫu dạng xml-->
+							<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" id="div__id__modalPropertyInput">
+					            <div class="modal-dialog modal-sm">
+					              	<div class="modal-content">
+					                	<div class="modal-header">
+					                  		<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
+					                  		</button>
+					                  		<h5 class="modal-title" id="h5__id__modalTitleThemThuocTinh"></h5>
+					                	</div>
+					                	<div class="modal-body" style="overflow-y: hidden;" id="div__id__modalBodyThemThuocTinh">
+					                		<div class="row form-group" id="div__id__required" data-div-check>
+					                			<div class="col-md-1 col-sm-1 col-xs-12">
+					                				<input type="checkbox" style="margin-top: 1px;" id="checkBox__id__required" data-input-clearCheck>
+					                			</div>
+					                			<div class="col-md-5 col-sm-5 col-xs-12">
+					                				<label>Trường bắt buộc</label>
+					                			</div>
+					                		</div>
+					                		<div class="row form-group" id="div__id__numberNoRegex" data-div-check>
+					                			<div class="col-md-1 col-sm-1 col-xs-12">
+					                				<input type="checkbox" style="margin-top: 1px;" id="checkBox__id__numberNoRegex" data-input-clearCheck>
+					                			</div>
+					                			<div class="col-md-5 col-sm-5 col-xs-12">
+					                				<label>Chỉ cho phép số nguyên không dấu</label>
+					                			</div>
+					                		</div>
+					                		<div class="row form-group" id="div__id__minLength" data-div-check>
+					                			<div class="col-md-1 col-sm-1 col-xs-12">
+					                				<input type="checkbox" style="margin-top: 1px;" id="checkBox__id__minLength" data-input-clearCheck>
+					                			</div>
+					                			<div class="col-md-5 col-sm-5 col-xs-12">
+					                				<label>Độ dài thông tin tối thiểu</label>
+					                			</div>
+					                			<div class="col-md-6 col-sm-6 col-xs-12">
+					                				<input type="number" class="form-control" id="number__id__minLength" min="1" data-input-clearText>
+					                			</div>
+					                		</div>
+					                		<div class="row form-group" id="div__id__maxLength" data-div-check>
+					                			<div class="col-md-1 col-sm-1 col-xs-12">
+					                				<input type="checkbox" style="margin-top: 1px;" id="checkBox__id__maxLength" min="1" data-input-clearCheck>
+					                			</div>
+					                			<div class="col-md-5 col-sm-5 col-xs-12">
+					                				<label>Độ dài thông tin tối đa</label>
+					                			</div>
+					                			<div class="col-md-6 col-sm-6 col-xs-12">
+					                				<input type="number" class="form-control" id="number__id__maxLength" data-input-clearText>
+					                			</div>
+					                		</div>
+					                		<div class="row form-group" id="div__id__min" data-div-check>
+					                			<div class="col-md-1 col-sm-1 col-xs-12">
+					                				<input type="checkbox" style="margin-top: 1px;" id="checkBox__id__min" data-input-clearCheck>
+					                			</div>
+					                			<div class="col-md-5 col-sm-5 col-xs-12">
+					                				<label>Số nhỏ nhất được phép nhập</label>
+					                			</div>
+					                			<div class="col-md-6 col-sm-6 col-xs-12">
+					                				<input type="number" class="form-control" id="number__id__min" min="1" data-input-clearText>
+					                			</div>
+					                		</div>
+					                		<div class="row form-group" id="div__id__max" data-div-check>
+					                			<div class="col-md-1 col-sm-1 col-xs-12">
+					                				<input type="checkbox" style="margin-top: 1px;" id="checkBox__id__max" data-input-clearCheck>
+					                			</div>
+					                			<div class="col-md-5 col-sm-5 col-xs-12">
+					                				<label>Số lớn nhất được phép nhập</label>
+					                			</div>
+					                			<div class="col-md-6 col-sm-6 col-xs-12">
+					                				<input type="number" class="form-control" id="number__id__max" min="1" data-input-clearText>
+					                			</div>
+					                		</div>
+					                		<div class="row form-group" id="div__id__placeholder" data-div-check>
+					                			<div class="col-md-1 col-sm-1 col-xs-12">
+					                				<input type="checkbox" style="margin-top: 1px;" id="checkBox__id__placeholder" data-input-clearCheck>
+					                			</div>
+					                			<div class="col-md-5 col-sm-5 col-xs-12">
+					                				<label>Thông tin gợi ý nhập liệu</label>
+					                			</div>
+					                			<div class="col-md-6 col-sm-6 col-xs-12">
+					                				<input type="text" class="form-control" id="textBox__id__placeholder" data-input-clearText>
+					                			</div>
+					                		</div>
+					                		<div class="row form-group" id="div__id__multiple" data-div-check>
+					                			<div class="col-md-1 col-sm-1 col-xs-12">
+					                				<input type="checkbox" style="margin-top: 1px;" id="checkBox__id__multiple" data-input-clearCheck>
+					                			</div>
+					                			<div class="col-md-5 col-sm-5 col-xs-12">
+					                				<label>Chọn nhiều file</label>
+					                			</div>
+					                		</div>
+					                		<div class="row form-group" id="div__id__rows" data-div-check>
+					                			<div class="col-md-1 col-sm-1 col-xs-12">
+					                				<input type="checkbox" style="margin-top: 1px;" id="checkBox__id__rows" data-input-clearCheck>
+					                			</div>
+					                			<div class="col-md-5 col-sm-5 col-xs-12">
+					                				<label>Số dòng (Text multiline)</label>
+					                			</div>
+					                			<div class="col-md-6 col-sm-6 col-xs-12">
+					                				<input type="number" class="form-control" id="number__id__rows" min="1" data-input-clearText>
+					                			</div>
+					                		</div>
+					                		<div class="row form-group" id="div__id__radio_checkBox">
+					                			<div class="col-md-1 col-sm-1 col-xs-12">
+					                				<input type="checkbox" style="margin-top: 1px;" id="checkBox__id__radio_checkBox" checked disabled>
+					                			</div>
+					                			<div class="col-md-3 col-sm-3 col-xs-12">
+					                				<label>Tiêu đề</label>
+					                			</div>
+					                			<div class="col-md-8 col-sm-8 col-xs-12">
+					                				<input type="text" class="form-control" id="textBox__id__radio_checkBox" data-input-clearText>
+					                			</div>
+					                		</div>
+					                		<div class="row form-group" id="div__id__comboBox_datalist">
+					                			<div class="col-md-1 col-sm-1 col-xs-12">
+					                				<input type="checkbox" style="margin-top: 1px;" id="checkBox__id__comboBox_datalist" checked disabled>
+					                			</div>
+					                			<div class="col-md-5 col-sm-5 col-xs-12">
+					                				<label>Thêm các lựa chọn (Combo box, Datalist)</label>
+					                			</div>
+					                			<div class="col-md-5 col-sm-5 col-xs-12">
+					                				<input type="text" class="form-control" id="textBox__id__themLuaChon" data-input-clearText>
+					                			</div>
+					                			<div class="col-md-1 col-sm-1 col-xs-12">
+					                				<button type="button" class="btn btn-sm btn-primary" id="button__id__themBieuMauDangFileLuaChon">
+					                					<i class="glyphicon glyphicon-plus"></i>
+					                				</button>
+					                			</div>
+					                		</div>
+					                		<div class="row form-group" id="div__id__datetimePicker">
+					                			<div class="col-md-1 col-sm-1 col-xs-12">
+					                				<input type="checkbox" style="margin-top: 1px;" id="checkBox__id__datetimePicker" checked disabled>
+					                			</div>
+					                			<div class="col-md-4 col-sm-4 col-xs-12">
+					                				<label>Định đạng ngày giờ</label>
+					                			</div>
+					                			<div class="col-md-7 col-sm-7 col-xs-12">
+					                				<select class="form-control" id="select__id__datetimePicker">
+					                					<option value="DD/MM/YYYY hh:mm:ss A">
+					                						Ngày/Tháng/Năm Giờ:Phút:Giây AM/PM
+					                					</option>
+					                					<option value="DD/MM/YYYY HH:mm:ss">
+					                						Ngày/Tháng/Năm Giờ:Phút:Giây (24h)
+					                					</option>
+					                					<option value="DD/MM/YYYY hh:mm A">
+					                						Ngày/Tháng/Năm Giờ:Phút AM/PM
+					                					</option>
+					                					<option value="DD/MM/YYYY HH:mm">
+					                						Ngày/Tháng/Năm Giờ:Phút (24h)
+					                					</option>
+					                					<option value="DD/MM/YYYY hh A">
+					                						Ngày/Tháng/Năm Giờ AM/PM
+					                					</option>
+					                					<option value="DD/MM/YYYY HH">
+					                						Ngày/Tháng/Năm Giờ (24h)
+					                					</option>
+					                					<option value="DD/MM/YYYY">
+					                						Ngày/Tháng/Năm
+					                					</option>
+					                					<option value="MM/YYYY">
+					                						Tháng/Năm
+					                					</option>
+					                					<option value="YYYY">
+					                						Năm
+					                					</option>
+					                				</select>
+					                			</div>
+					                		</div>
+					                		<div class="row form-group" id="div__id__minDate_current">
+					                			<div class="col-md-1 col-sm-1 col-xs-12">
+					                				<input type="checkbox" style="margin-top: 1px;" id="checkBox__id__minDate_current" data-input-clearCheck>
+					                			</div>
+					                			<div class="col-md-6 col-sm-6 col-xs-12">
+					                				<label>Ngày giờ nhỏ nhất được phép chọn (ngày giờ hiện tại của người dùng)</label>
+					                			</div>
+					                			<div class="col-md-5 col-sm-5 col-xs-12">
+					                				<div class="form-group">
+								                        <div class="input-group date" id="div__id__datetimePicker_minDate_current">
+								                            <input type="text" class="form-control" onkeydown="return false">
+								                        </div>
+								                    </div>
+					                			</div>
+					                		</div>
+					                		<div class="row form-group" id="div__id__maxDate_current">
+					                			<div class="col-md-1 col-sm-1 col-xs-12">
+					                				<input type="checkbox" style="margin-top: 1px;" id="checkBox__id__maxDate_current" data-input-clearCheck>
+					                			</div>
+					                			<div class="col-md-6 col-sm-6 col-xs-12">
+					                				<label>Ngày giờ lớn nhất được phép chọn (ngày giờ hiện tại của người dùng)</label>
+					                			</div>
+					                			<div class="col-md-5 col-sm-5 col-xs-12">
+					                				<div class="form-group">
+								                        <div class="input-group date" id="div__id__datetimePicker_maxDate_current">
+								                            <input type="text" class="form-control" onkeydown="return false">
+								                        </div>
+								                    </div>
+					                			</div>
+					                		</div>
+					                		<div class="row form-group" id="div__id__minDate">
+					                			<div class="col-md-1 col-sm-1 col-xs-12">
+					                				<input type="checkbox" style="margin-top: 1px;" id="checkBox__id__minDate" data-input-clearCheck>
+					                			</div>
+					                			<div class="col-md-4 col-sm-4 col-xs-12">
+					                				<label>Ngày giờ nhỏ nhất được phép chọn</label>
+					                			</div>
+					                			<div class="col-md-7 col-sm-7 col-xs-12">
+					                				<div class="form-group">
+								                        <div class="input-group date" id="div__id__datetimePicker_minDate">
+								                            <input type="text" class="form-control" id="textBox__id__minDate" onkeydown="return false">
+								                            <span class="input-group-addon" id="span__id__minDate">
+								                               <span class="glyphicon glyphicon-calendar"></span>
+								                            </span>
+								                        </div>
+								                    </div>
+								                </div>
+								            </div>
+								            <div class="row form-group" id="div__id__maxDate">
+					                			<div class="col-md-1 col-sm-1 col-xs-12">
+					                				<input type="checkbox" style="margin-top: 1px;" id="checkBox__id__maxDate" data-input-clearCheck>
+					                			</div>
+					                			<div class="col-md-4 col-sm-4 col-xs-12">
+					                				<label>Ngày giờ lớn nhất được phép chọn</label>
+					                			</div>
+					                			<div class="col-md-7 col-sm-7 col-xs-12">
+					                				<div class="form-group">
+								                        <div class="input-group date" id="div__id__datetimePicker_maxDate">
+								                            <input type="text" class="form-control" id="textBox__id__maxDate" onkeydown="return false">
+								                            <span class="input-group-addon" id="span__id__maxDate">
+								                               <span class="glyphicon glyphicon-calendar"></span>
+								                            </span>
+								                        </div>
+								                    </div>
+								                </div>
+								            </div>
+					                	</div>
+						                <div class="modal-footer">
+						                	<button type="button" class="btn btn-primary" id="button__id__ok">Ok</button>
+				                          	<button type="button" class="btn btn-default" id="button__id__cancle" data-dismiss="modal">Cancle</button>
+				                        </div>
+					              	</div>
+					            </div>
+					        </div>
+
+							<!-- Form cập nhật biểu mẫu dạng file-->
+						  	<div class="col-md-12 col-sm-12 col-xs-12" id="div__id__formBieuMauDangFile" style="display: none;">
+							    <div class="x_panel">
+							      	<div class="x_title">
+								        <h2 id="h2__id__tieuDeFormBM"></h2>
+								        <ul class="nav navbar-right panel_toolbox">
+								        	<li><a class="close-link"><i class="fa fa-close"></i></a></li>
+								          	<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+								        </ul>
+								        <div class="clearfix"></div>
+							      	</div>
+							    	<div class="x_content">
+							        	<form class="form-horizontal form-label-left" novalidate>
+							          		<div class="item form-group">
+							            		<label class="control-label col-md-3 col-sm-3 col-xs-12">Tiêu đề</label>
+							           			<div class="col-md-6 col-sm-6 col-xs-12">
+							           				<input type="text" class="form-control col-md-7 col-xs-12" id="textBox__id__tenTDBieuMauDangFile" required pattern="alphanumeric" placeholder="Biểu mẫu đăng ký sinh hội thao cấp khoa năm học 2019 -2020"> 
+							            		</div>
+							          		</div>
+								          	<div class="item form-group" id="div__id__fileBieuMauArea">
+								            	<label class="control-label col-md-3 col-sm-3 col-xs-12">File</label>
+							            		<div class="col-md-6 col-sm-6 col-xs-12">
+							            			<input type="file" class="form-control col-md-7 col-xs-12" id="file__id__fileVBBM" required>
+							            		</div>
+								          	</div>
+								          	<div class="item form-group">
+								            	<label class="control-label col-md-3 col-sm-3 col-xs-12">File đã lưu</label>
+							            		<div class="col-md-6 col-sm-6 col-xs-12" id="div__id__fileDaLuu"><!-- hiển thị ra thẻ a --></div>
+								          	</div>
+								          	<div class="ln_solid"></div>
+								          	<div class="form-group text-center">
+									            <div class="col-md-6 col-md-offset-3">
+									            	<button type="button" class="btn btn-success" data-toggle="tooltip" data-original-title="Cập nhật" id="button__id__capNhatBieuMauDangFile">
+									              		<i class="glyphicon glyphicon-ok"></i>
+									              	</button>
+									              	<button type="button" class="btn btn-danger" rel="tooltip" data-original-title="Huỷ" id="button__id__huyBieuMauDangFile">
+									              		<i class="glyphicon glyphicon-remove"></i>
+									              	</button>
+									            </div>
+								          	</div>
+							        	</form>
+							      	</div>
+							    </div>
+							</div>
+
+					        <!-- Form cập nhật biểu mẫu dạng xml-->
+						  	<div class="col-md-12 col-sm-12 col-xs-12" id="div__id__formBieuMauDangXML" style="display: none;">
+							    <div class="x_panel">
+							      	<div class="x_title">
+								        <h2>THÔNG TIN BIỂU MẪU DẠNG XML</h2>
+								        <ul class="nav navbar-right panel_toolbox">
+								        	<li><a class="close-link"><i class="fa fa-close"></i></a></li>
+								          	<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+								        </ul>
+								        <div class="clearfix"></div>
+							      	</div>
+							    	<div class="x_content">
+							        	<form class="form-horizontal form-label-left" novalidate>
+							        		<div class="item form-group">
+							            		<label class="control-label col-md-3 col-sm-3 col-xs-12">Tiêu đề</label>
+							           			<div class="col-md-6 col-sm-6 col-xs-12">
+							           				<input type="text" class="form-control col-md-7 col-xs-12" id="textBox__id__tenTDBieuMauDangXML" required pattern="alphanumeric" placeholder="Biểu mẫu đăng ký sinh hội thao cấp khoa năm học 2019 -2020"> 
+							            		</div>
+							          		</div>
+								          	<div class="item form-group" id="div__id__bieuMauXMLArea">
+								            	<label class="control-label col-md-3 col-sm-3 col-xs-12"></label>
+								            	<label class="control-label col-md-6 col-sm-6 col-xs-12" style="text-align: center;">NỘI DUNG BIỂU MẪU</label>
+								          	</div>
+								          	<div class="border_dashed" id="div__id__noiDungBMXML">
+									          	
+								          	</div>
+								          	<div class="item form-group" id="div__id__truongKhoiTao">
+								            	<div class="col-md-3 col-sm-3 col-xs-12 text-right">
+								            		<input type="text" class="form-control" id="textBox__id__tenTruongBieuMau" placeholder="Tiêu đề trường nhập">
+								            	</div>
+							            		<div class="col-md-6 col-sm-6 col-xs-12 text-center">
+							            			<div class="btn-group" data-toggle="buttons">
+						            					<label class="btn btn-default" data-toggle="tooltip" data-original-title="Text box">
+															<input type="radio" name="radio__name__toolBoxBM" data-radio-controlKhoiTao="radio__data-radio-controlKhoiTao__toolBox_textBox">
+											              	<i class="fa fa-edit"></i>
+										              	</label>
+										              	<label class="btn btn-default" data-toggle="tooltip" data-original-title="Number">
+															<input type="radio" name="radio__name__toolBoxBM" data-radio-controlKhoiTao="radio__data-radio-controlKhoiTao__toolBox_number">
+											              	<i class="glyphicon glyphicon-sound-7-1"></i>
+										              	</label>
+										              	<label class="btn btn-default" data-toggle="tooltip" data-original-title="Text box multiline">
+											              	<input type="radio" name="radio__name__toolBoxBM" data-radio-controlKhoiTao="radio__data-radio-controlKhoiTao__toolBox_textarea">
+											              		<i class="fa  fa-align-justify"></i>
+										              	</label>
+										              	<label class="btn btn-default" data-toggle="tooltip" data-original-title="Combo box">
+											              	<input type="radio" name="radio__name__toolBoxBM" data-radio-controlKhoiTao="radio__data-radio-controlKhoiTao__toolBox_comboBox">
+										              		<i class="fa fa-toggle-down"></i>
+										              	</label>
+										              	<label class="btn btn-default" data-toggle="tooltip" data-original-title="Datetime picker">
+											              	<input type="radio" name="radio__name__toolBoxBM" data-radio-controlKhoiTao="radio__data-radio-controlKhoiTao__toolBox_datetimePicker">
+										              		<i class="glyphicon glyphicon-calendar"></i>
+										              	</label>
+										              	<label class="btn btn-default" data-toggle="tooltip" data-original-title="Datalist">
+											              	<input type="radio" name="radio__name__toolBoxBM" data-radio-controlKhoiTao="radio__data-radio-controlKhoiTao__toolBox_datalist">
+										              		<i class="fa fa-list-ul"></i>
+										              	</label>
+										              	<label class="btn btn-default" data-toggle="tooltip" data-original-title="Check box">
+											              	<input type="radio" name="radio__name__toolBoxBM" data-radio-controlKhoiTao="radio__data-radio-controlKhoiTao__toolBox_checkBox">
+										              		<i class="fa fa-check-square-o"></i>
+										              	</label>
+										              	<label class="btn btn-default" data-toggle="tooltip" data-original-title="Radio button">
+											              	<input type="radio" name="radio__name__toolBoxBM" data-radio-controlKhoiTao="radio__data-radio-controlKhoiTao__toolBox_radio">
+										              		<i class="fa fa-dot-circle-o"></i>
+										              		</label>
+										              	<label class="btn btn-default" data-toggle="tooltip" data-original-title="Up files">
+											              	<input type="radio" name="radio__name__toolBoxBM" data-radio-controlKhoiTao="radio__data-radio-controlKhoiTao__toolBox_file">
+										              		<i class="fa fa-cloud-upload"></i>
+										              	</label>
+						            				</div>
+						            			</div>
+							            		<div class="col-md-3 col-sm-3 col-xs-12">
+								            		<div class="btn-group">
+								            			<button type="button" class="btn btn-sm btn-success" data-toggle="modal" rel="tooltip" data-original-title="Thêm trường này" id="button__id__themTruong">
+										              		<i class="glyphicon glyphicon-ok"></i>
+										              	</button>
+										              	<button type="button" class="btn btn-sm btn-danger" rel="tooltip" data-original-title="Huỷ"  id="button__id__huyTruong">
+										              		<i class="glyphicon glyphicon-remove"></i>
+										              	</button>
+						            				</div>
+								            	</div>
+								          	</div>
+								          	<div class="ln_solid"></div>
+								          	<div class="form-group text-center">
+									            <div class="col-md-6 col-md-offset-3">
+									            	<button type="button" class="btn btn-success" data-toggle="tooltip" data-original-title="Cập nhật" id="button__id__capNhatBieuMauDangXML">
+									              		<i class="glyphicon glyphicon-ok"></i>
+									              	</button>
+									              	<button type="button" class="btn btn-danger" rel="tooltip" data-original-title="Huỷ" id="button__id__huyBieuMauDangXML">
+									              		<i class="glyphicon glyphicon-remove"></i>
+									              	</button>
+									            </div>
+								          	</div>
+							        	</form>
+							      	</div>
+							    </div>
+							</div>
+							
+							<!-- Danh sách thông báo có sử dụng một biểu mẫu -->
+						  	<div class="col-md-12 col-sm-12 col-xs-12" id="div__id__danhSachTBCBM" style="display: none;">
+								<div class="x_panel">
+								  	<div class="x_title">
+								    	<h2 id="h2__id__danhSachTBCBM">Danh sách các thông báo có sử dụng biểu mẫu [tênbieumau]</h2>
+								    	<ul class="nav navbar-right panel_toolbox">
+								    		<li><a class="close-link"><i class="fa fa-close"></i></a></li>
+								      		<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+								    	</ul>
+								    	<div class="clearfix"></div>
+								  	</div>
+							  		<div class="x_content" style="overflow-y: hidden;">
+							  			<div class="row">
+							  				<div class="col-sm-12">
+												<table id="table__id__thongBaoCuaBieuMau" class="table table-striped table-bordered bulk_action">
+							                      	<thead>
+							                        	<tr>
+								                          	<th>#</th>
+								                          	<th>Người tạo</th>
+								                          	<th>Ngày tạo</th>
+								                          	<th>Tiêu đề</th>
+								                          	<th>Nội dung</th>
+								                          	<th>Phạm vi thông báo</th>
+							                        	</tr>
+							                      	</thead>
+							                      	<tbody id="tbody__id__thongBaoCuaBieuMau">
+							                        	<tr>
+							                  				<td>1</td>
+							                  				<td></td>
+							                  				<td></td>
+							                  				<td>2</td>
+							                  				<td>2</td>
+							                  				<td>2</td>
+							                			</tr>
+							                      	</tbody>
+							                    </table>
+							  				</div>
+							  			</div>
+							  		</div>
+								</div>
+							</div>
+
+							<!-- Danh sách biểu mẫu dạng File -->
+						  	<div class="col-md-12 col-sm-12 col-xs-12">
+								<div class="x_panel">
+								  	<div class="x_title">
+								    	<h2>DANH SÁCH VĂN BẢN / BIỂU MẪU DẠNG FILE</h2>
+								    	<ul class="nav navbar-right panel_toolbox">
+								      		<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+								      		</li>
+								    	</ul>
+								    	<div class="clearfix"></div>
+								  	</div>
+							  		<div class="x_content" style="overflow-y: hidden;">
+							  			<div class="btn-group marginBottom10" id="div__id__button_group_bieuMauDangFile">
+							  				<button type="button" class="btn btn-primary" data-toggle="tooltip" data-original-title="Thêm một biểu mẫu dạng file" id="button__id__themBieuMauDangFile"><i class="glyphicon glyphicon-plus"></i></button>
+								  			<button type="button" class="btn btn-info" data-toggle="tooltip" data-original-title="Thêm một văn mới" id="button__id__themVanBan"><i class="glyphicon glyphicon-plus"></i></button>
+							  			</div>
+							  			<div class="row">
+							  				<div class="col-sm-12">
+												<table id="table__id__bieuMauDangFile" class="table table-striped table-bordered bulk_action">
+										      		<thead>
+										        		<tr>
+												          	<th><input type="checkbox" id="checkbox__id__dtb_bieuMauDangFile_chkAll"></th>
+												          	<th>#</th>
+												          	<th>TIÊU ĐỀ</th>
+												          	<th>THỂ LOẠI</th>
+												          	<th>FILES</th>
+												          	<th>THAO TÁC</th>
+												        </tr>
+												    </thead>
+												    <tbody id="tbody__id__bieuMauDangFile">
+													    <tr>
+													        <td>
+																<input type="checkbox" data-checkbox-content="mã biểu mẫu" data-checkbox-content-name="tiêu đề biểu mẫu" data-checkbox-id="checkbox__data-checkbox-id__dtb_bieuMauDangFile_chk">
+															</td>
+															<td></td>
+													        <td></td>
+													        <td></td>
+													        <td></td>
+													        <td>
+													        	<div class="btn-group">
+										                            <button class="btn btn-sm btn-default" type="button" data-toggle="tooltip" data-original-title="Sửa" data-button="suaBieuMauDangFile" data-button-id="mã biểu mẫu" data-button-loaiBM="bieuMauDangFile or vanBan"><i class="glyphicon glyphicon-edit"></i></button>
+										                            <button class="btn btn-sm btn-default" type="button" data-toggle="tooltip" data-original-title="Xoá" data-button="xoaBieuMauDangFile" data-button-id="mã biểu mẫu" data-button-tieuDeBieuMau=""><i class="glyphicon glyphicon-trash"></i></button>
+										                            <button class="btn btn-sm btn-default" type="button" data-toggle="tooltip" data-original-title="Xem các thông báo có sử dụng biểu mẫu này" data-button="xemTBCBieuMauDangFile" data-button-id="mã biểu mẫu"><i class="fa  fa-bullhorn"></i></button>
+									                          	</div>
+										                    </td>
+													    </tr>
+												    </tbody>
+										    	</table>
+							  				</div>
+							  			</div>
+							  		</div>
+								</div>
+							</div>
+
+							<!-- Danh sách biểu mẫu dạng XML -->
+						  	<div class="col-md-12 col-sm-12 col-xs-12">
+								<div class="x_panel">
+								  	<div class="x_title">
+								    	<h2>DANH SÁCH BIỂU MẪU DẠNG XML</h2>
+								    	<ul class="nav navbar-right panel_toolbox">
+								      		<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+								      		</li>
+								    	</ul>
+								    	<div class="clearfix"></div>
+								  	</div>
+							  		<div class="x_content" style="overflow-y: hidden;">
+							  			<div class="btn-group marginBottom10" id="div__id__button_group_bieuMauDangXML">
+							  				<button type="button" class="btn btn-primary" data-toggle="tooltip" data-original-title="Thêm một biểu mẫu dạng XML" id="button__id__themBieuMauDangXML"><i class="glyphicon glyphicon-plus"></i></button>
+							  			</div>
+							  			<div class="row">
+							  				<div class="col-sm-12">
+												<table id="table__id__bieuMauDangXML" class="table table-striped table-bordered bulk_action">
+										      		<thead>
+										        		<tr>
+												          	<th><input type="checkbox" id="checkbox__id__dtb_bieuMauDangXML_chkAll"></th>
+												          	<th>#</th>
+												          	<th>TIÊU ĐỀ</th>
+												          	<th>THAO TÁC</th>
+												        </tr>
+												    </thead>
+												    <tbody id="tbody__id__bieuMauDangXML">
+													    <tr>
+													        <td>
+																<input type="checkbox" data-checkbox-content="mã biểu mẫu" data-checkbox-content-name="tiêu đề biểu mẫu" data-checkbox-id="checkbox__data-checkbox-id__dtb_bieuMauDangXML_chk">
+															</td>
+															<td></td>
+													        <td></td>
+													        <td>
+													        	<div class="btn-group">
+										                            <button class="btn btn-sm btn-default" type="button" data-toggle="tooltip" data-original-title="Sửa" data-button="suaBieuMauDangXML" data-button-id="mã biểu mẫu"><i class="glyphicon glyphicon-edit"></i></button>
+										                            <button class="btn btn-sm btn-default" type="button" data-toggle="tooltip" data-original-title="Xoá" data-button="xoaBieuMauDangXML" data-button-id="mã biểu mẫu"><i class="glyphicon glyphicon-trash"></i></button>
+										                            <button class="btn btn-sm btn-default" type="button" data-toggle="modal" data-target="#div__id__modalThongBaoCuaBM" rel="tooltip" data-original-title="Xem các thông báo có sử dụng biểu mẫu này" data-button="xemTBCBieuMauDangXML" data-button-id="mã biểu mẫu"><i class="fa  fa-bullhorn"></i></button>
+									                          	</div>
+										                    </td>
+													    </tr>
+												    </tbody>
+										    	</table>
+							  				</div>
+							  			</div>
+							  		</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /page content -->
+				<!-- footer content -->
+		        <footer style="text-align: center;">
+		          <div class="pull-center">
+		            <h1><i class="fa fa-paw"></i> Hệ Thống Quản Lý Học Tập Sinh Viên!</h1>
+		          	<p>	Khoa Công Nghệ Thông Tin - Đại học An Giang.</p>
+		          	<p>© 2019 All Rights Reserved.</p>
+		          </div>
+		          <div class="clearfix"></div>
+		        </footer>
+		        <!-- /footer content -->
+		      </div>
+	    </div>
+
+	    <!-- Phần chung -->
+	    <!-- jQuery -->
+	    <script src="../resources/js/jquery/dist/jquery.min.js"></script>
+	    <!-- Bootstrap -->
+	    <script src="../resources/bootstraps/bootstrap/dist/js/bootstrap.min.js"></script>
+	    <!-- NProgress -->
+	    <script src="../resources/bootstraps/nprogress/nprogress.js"></script>
+
+	    <!-- jQuery custom content scroller -->
+	    <script src="../resources/bootstraps/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+
+	    <!-- ALERTIFY JS -->
+	    <script src="../resources/bootstraps/alertifyjs/alertify.min.js"></script>
+
+	    <!-- Phần riêng -->
+	    <!-- FastClick -->
+		<script src="../resources/js/fastclick/lib/fastclick.js"></script>
+		<!-- validator -->
+		<script src="../resources/bootstraps/validator/validator.js"></script>
+		<!-- Datatables -->
+		<script src="../resources/js/datatables.net/js/jquery.dataTables.min.js"></script>
+		<script src="../resources/bootstraps/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+		<script src="../resources/js/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+		<script src="../resources/bootstraps/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+		<script src="../resources/js/datatables.net-buttons/js/buttons.flash.min.js"></script>
+		<script src="../resources/js/datatables.net-buttons/js/buttons.html5.min.js"></script>
+		<script src="../resources/js/datatables.net-buttons/js/buttons.print.min.js"></script>
+		<script src="../resources/js/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+		<script src="../resources/js/pdfmake/build/pdfmake.min.js"></script>
+		<script src="../resources/js/pdfmake/build/vfs_fonts.js"></script>
+
+		<!-- bootstrap-daterangepicker -->
+	    <script src="../resources/js/moment/min/moment.min.js"></script>
+	    <script src="../resources/bootstraps/bootstrap-daterangepicker/daterangepicker.js"></script>
+	    <!-- bootstrap-datetimepicker -->    
+	    <script src="../resources/bootstraps/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+
+	    <!-- Phần chung -->
+	    <!-- Custom Theme Scripts -->
+	    <script src="../resources/js/custom.min.js"></script>
+	    <!-- Phần riêng -->
+	    <!-- Các hàm dùng chung trong project -->
+	    <script src="../resources/js/jsForViews/common.js"></script>
+	    <!-- Khởi tạo side bar -->
+	    <script src="../resources/js/jsForViews/khoi_tao_side_bar.js"></script>
+	    <!-- Khởi tạo Form validate -->
+	    <script src="../resources/js/jsForViews/khoi_tao_form_validator.js"></script>
+	    <!-- Khởi tạo các chức năng thanh công cụ menu -->
+	    <script src="../resources/js/jsForViews/thanh_cong_cu_menu.js"></script>
+	    <!-- Khởi tạo một số function dùng trong tạo biểu mẫu xml -->
+	    <script src="../resources/js/jsForViews/hanh_chinh/van_ban__bieu_mau/0_common.js"></script>
+	    <!-- Khởi tạo data table -->
+	    <script src="../resources/js/jsForViews/hanh_chinh/van_ban__bieu_mau/1_khoi_tao_dataTable_bieu_mau.js"></script>
+	    <!-- Khởi tạo sự kiện check record table -->
+	    <script src="../resources/js/jsForViews/hanh_chinh/van_ban__bieu_mau/2_checkbox_table_bieu_mau.js"></script>
+	    <!-- Khởi tạo sự kiện change trên các date picker modal thêm thuộc tính trường biểu mẫu -->
+	    <script src="../resources/js/jsForViews/hanh_chinh/van_ban__bieu_mau/4_select_datetimepicker_tren_modal_them_thuoc_tinh.js"></script>
+	    <!-- Khởi tạo sự kiện clcik nút thêm mới một biểu mẫu -->
+	    <script src="../resources/js/jsForViews/hanh_chinh/van_ban__bieu_mau/5_nut_them_bieu_mau.js"></script>
+	    <!-- Khởi tạo sự kiện click nút mở form cập nhật biểu mẫu -->
+	    <script src="../resources/js/jsForViews/hanh_chinh/van_ban__bieu_mau/6_nut_cap_nhat_tren_table.js"></script>
+	    <!-- Khởi tạo sự kiện click nút cập nhật thay đổi biểu mẫu -->
+	    <script src="../resources/js/jsForViews/hanh_chinh/van_ban__bieu_mau/7_nut_cap_nhat_tren_form.js"></script>
+	    <!-- Khởi tạo sự kiện click  nút đóng form cập nhật / thêm mới biểu mẫu-->
+	    <script src="../resources/js/jsForViews/hanh_chinh/van_ban__bieu_mau/8_nut_huy_tren_form.js"></script>
+	    <!-- Khởi tạo sự kiện click nút thêm một trường mới vào biểu mẫu -->
+	    <script src="../resources/js/jsForViews/hanh_chinh/van_ban__bieu_mau/9_nut_them_truong_bieu_mau_xml.js"></script>
+	    <!-- Khởi tạo sự kiện click nút cập nhật thay đổi một trường trên biển mẫu -->
+	    <script src="../resources/js/jsForViews/hanh_chinh/van_ban__bieu_mau/10_nut_sua_truong_bieu_mau_xml.js"></script>
+	    <!-- Khởi tạo sự kiện click nút đổi một trường trên biển mẫu -->
+	    <script src="../resources/js/jsForViews/hanh_chinh/van_ban__bieu_mau/11_nut_doi_truong_bieu_mau_xml.js"></script>
+	    <!-- Khởi tạo sự kiện click nút xoá một trường trên biển mẫu -->
+	    <script src="../resources/js/jsForViews/hanh_chinh/van_ban__bieu_mau/12_nut_xoa_truong_bieu_mau_xml.js"></script>
+	    <!-- Khởi tạo sự kiện click nút xác nhận thêm mới / cập nhật / thay đổi trường trên biểu mẫu -->
+	    <script src="../resources/js/jsForViews/hanh_chinh/van_ban__bieu_mau/13_nut_ok_modal.js"></script>
+	    <!-- Khởi tạo sự kiện click nút xoá trường / huỷ cập nhật / huỷ thay đổi trường trên biểu mẫu -->
+	    <script src="../resources/js/jsForViews/hanh_chinh/van_ban__bieu_mau/14_nut_huy_them_truong_bieu_mau_xml.js"></script>
+	    <!-- Khởi tạo sự kiện click nút thêm một lựa chọn cho combobox hoặc datalist trên modal thêm thuộc tính trường-->
+	    <script src="../resources/js/jsForViews/hanh_chinh/van_ban__bieu_mau/15_nut_them_lua_chon_modal_them_thuoc_tinh.js"></script>
+	    <!-- Khởi tạo sự kiện clcik nút xoá một lựa chọn khỏi combobox / datalist khỏi danh sách các lựa chọn -->
+	    <script src="../resources/js/jsForViews/hanh_chinh/van_ban__bieu_mau/16_nut_xoa_lua_chon_modal_them_thuoc_tinh.js"></script>
+	    <!-- Khởi tạo sự kiện change cho checkbox required trên modal thêm thuộc tính -->
+	    <script src="../resources/js/jsForViews/hanh_chinh/van_ban__bieu_mau/17_checkbox_modal_them_thuoc_tinh.js"></script>
+	    <!-- Khởi tạo sự kiện change cho checkbox placeholder trên modal thêm thuộc tính -->
+	    <script src="../resources/js/jsForViews/hanh_chinh/van_ban__bieu_mau/18_checkbox_placeholder_modal_them_thuoc_tinh.js"></script>
+	    <!-- Khởi tạo sự kiện change cho checkbox minlength trên modal thêm thuộc tính -->
+	    <script src="../resources/js/jsForViews/hanh_chinh/van_ban__bieu_mau/19_checkbox_minlength_modal_them_thuoc_tinh.js"></script>
+	    <!-- Khởi tạo sự kiện change cho checkbox maxlength trên modal thêm thuộc tính -->
+	    <script src="../resources/js/jsForViews/hanh_chinh/van_ban__bieu_mau/20_checkbox_maxlength_modal_them_thuoc_tinh.js"></script>
+	    <!-- Khởi tạo sự kiện change cho checkbox min trên modal thêm thuộc tính -->
+	    <script src="../resources/js/jsForViews/hanh_chinh/van_ban__bieu_mau/21_checkbox_min_modal_them_thuoc_tinh.js"></script>
+	    <!-- Khởi tạo sự kiện change cho checkbox max trên modal thêm thuộc tính -->
+	    <script src="../resources/js/jsForViews/hanh_chinh/van_ban__bieu_mau/22_checkbox_max_modal_them_thuoc_tinh.js"></script>
+	    <!-- Khởi tạo sự kiện change cho checkbox rows trên modal thêm thuộc tính -->
+	    <script src="../resources/js/jsForViews/hanh_chinh/van_ban__bieu_mau/23_checkbox_rows_modal_them_thuoc_tinh.js"></script>
+	    <!-- Khởi tạo sự kiện change cho checkbox mindate trên modal thêm thuộc tính -->
+	    <script src="../resources/js/jsForViews/hanh_chinh/van_ban__bieu_mau/24_checkbox_mindate_modal_them_thuoc_tinh.js"></script>
+	    <!-- Khởi tạo sự kiện change cho checkbox maxdate trên modal thêm thuộc tính -->
+	    <script src="../resources/js/jsForViews/hanh_chinh/van_ban__bieu_mau/25_checkbox_maxdate_modal_them_thuoc_tinh.js"></script>
+	    <!-- Khởi tạo sự kiện change cho checkbox mindate current trên modal thêm thuộc tính -->
+	    <script src="../resources/js/jsForViews/hanh_chinh/van_ban__bieu_mau/26_checkbox_mindate_current_modal_them_thuoc_tinh.js"></script>
+	    <!-- Khởi tạo sự kiện change cho checkbox maxdate current trên modal thêm thuộc tính -->
+	    <script src="../resources/js/jsForViews/hanh_chinh/van_ban__bieu_mau/27_checkbox_maxdate_current_modal_them_thuoc_tinh.js"></script>
+	    <!-- Khởi tạo sự kiện click nút xem danh sách thông báo của biểu mẫu-->
+	    <script src="../resources/js/jsForViews/hanh_chinh/van_ban__bieu_mau/28_nut_mo_danh_sachTB.js"></script>
+	    <!-- Khởi tạo tooltip -->
+	    <script src="../resources/js/jsForViews/khoi_tao_tooltip.js"></script>
+  	</body>
+</html>

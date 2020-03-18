@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hệ thống quản lý học tập sinh viên - Trường Đại học An Giang">
+    <meta name="keywords" content="QLHTSV">
+    <meta name="author" content="Yang Qing Gui">
+    <meta name="_token" content="">
+
+    <title>KHU VỰC QUẢN TRỊ VIÊN - QUẢN LÝ TIÊU CHÍ ĐÁNH GIÁ ĐIỂM RÈN LUYỆN | HỆ THỐNG QUẢN LÝ HỌC TẬP SINH VIÊN</title>
+
+    <!-- Phần chung -->
+    <!-- Bootstrap -->
+    <link rel="shortcut icon" href="../resources/images/favicon.ico" type="image/ico" media="all"/>
+    <link href="../resources/bootstraps/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="all">
+    <!-- Font Awesome -->
+    <link href="../resources/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- NProgress -->
+    <link href="../resources/bootstraps/nprogress/nprogress.css" rel="stylesheet" media="all">
+
+    <!-- jQuery custom content scroller -->
+    <link href="../resources/bootstraps/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet" media="all"/>
+    
+    <!-- ALertify JS -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="../resources/bootstraps/alertifyjs/css/alertify.min.css" media="all"/>
+    <!-- Default theme -->
+    <link rel="stylesheet" href="../resources/bootstraps/alertifyjs/css/themes/default.min.css" media="all"/>
+    <!-- Semantic UI theme -->
+    <link rel="stylesheet" href="../resources/bootstraps/alertifyjs/css/themes/semantic.min.css" media="all"/>
+
+    <!-- Phần riêng -->
+    <!-- Datatables -->
+	<link href="../resources/bootstraps/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet" media="all">
+	<link href="../resources/bootstraps/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet" media="all">
+
+    <!-- Phần chung -->
+    <!-- Custom Theme Style -->
+    <link href="../resources/css/custom.min.css" rel="stylesheet" media="all">
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+        <div class="main_container">
+			<!-- Left Menu -->
+			<div class="col-md-3 left_col" id="div__id__left_menu">
+			  <div class="left_col scroll-view">
+			    <div class="navbar nav_title" style="border: 0;">
+			      <a href="{{ url('/') }}" class="site_title"><i class="fa fa-paw"></i> <span>HTQLHTSV!</span></a>
+			    </div>
+
+			    <div class="clearfix"></div>
+
+			    <!-- menu profile quick info -->
+			    <div class="profile clearfix">
+			      <div class="profile_pic">
+			        <img src="../resources/images/user.png" alt="Ảnh người dùng" class="img-circle profile_img">
+			      </div>
+			      <div class="profile_info">
+			        <span>Welcome,</span>
+			        <h2>User</h2>
+			      </div>
+			    </div>
+			    <!-- /menu profile quick info -->
+
+			    <br />
+
+			    <!-- sidebar menu -->
+			    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+				    <div class="menu_section">
+						<h3>General</h3>
+						<ul class="nav side-menu">
+						  <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+						    <ul class="nav child_menu">
+						      <li><a href="index.html">Dashboard</a></li>
+						      <li><a href="index2.html">Dashboard2</a></li>
+						      <li><a href="index3.html">Dashboard3</a></li>
+						    </ul>
+						  </li>
+						  <li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>
+						    <ul class="nav child_menu">
+						      <li><a href="form.html">General Form</a></li>
+						      <li><a href="form_advanced.html">Advanced Components</a></li>
+						      <li><a href="form_validation.html">Form Validation</a></li>
+						      <li><a href="form_wizards.html">Form Wizard</a></li>
+						      <li><a href="form_upload.html">Form Upload</a></li>
+						      <li><a href="form_buttons.html">Form Buttons</a></li>
+						    </ul>
+						  </li>
+						  <li><a><i class="fa fa-desktop"></i> UI Elements <span class="fa fa-chevron-down"></span></a>
+						    <ul class="nav child_menu">
+						      <li><a href="general_elements.html">General Elements</a></li>
+						      <li><a href="media_gallery.html">Media Gallery</a></li>
+						      <li><a href="typography.html">Typography</a></li>
+						      <li><a href="icons.html">Icons</a></li>
+						      <li><a href="glyphicons.html">Glyphicons</a></li>
+						      <li><a href="widgets.html">Widgets</a></li>
+						      <li><a href="invoice.html">Invoice</a></li>
+						      <li><a href="inbox.html">Inbox</a></li>
+						      <li><a href="calendar.html">Calendar</a></li>
+						    </ul>
+						  </li>
+						  <li><a><i class="fa fa-table"></i> Tables <span class="fa fa-chevron-down"></span></a>
+						    <ul class="nav child_menu">
+						      <li><a href="tables.html">Tables</a></li>
+						      <li><a href="tables_dynamic.html">Table Dynamic</a></li>
+						    </ul>
+						  </li>
+						  <li><a><i class="fa fa-bar-chart-o"></i> Data Presentation <span class="fa fa-chevron-down"></span></a>
+						    <ul class="nav child_menu">
+						      <li><a href="chartjs.html">Chart JS</a></li>
+						      <li><a href="chartjs2.html">Chart JS2</a></li>
+						      <li><a href="morisjs.html">Moris JS</a></li>
+						      <li><a href="echarts.html">ECharts</a></li>
+						      <li><a href="other_charts.html">Other Charts</a></li>
+						    </ul>
+						  </li>
+						  <li><a><i class="fa fa-clone"></i>Layouts <span class="fa fa-chevron-down"></span></a>
+						    <ul class="nav child_menu">
+						      <li><a href="fixed_sidebar.html">Fixed Sidebar</a></li>
+						      <li><a href="fixed_footer.html">Fixed Footer</a></li>
+						    </ul>
+						  </li>
+						</ul>
+					</div>
+					<div class="menu_section">
+						<h3>Live On</h3>
+						<ul class="nav side-menu">
+						  <li><a><i class="fa fa-bug"></i> Additional Pages <span class="fa fa-chevron-down"></span></a>
+						    <ul class="nav child_menu">
+						      <li><a href="e_commerce.html">E-commerce</a></li>
+						      <li><a href="projects.html">Projects</a></li>
+						      <li><a href="project_detail.html">Project Detail</a></li>
+						      <li><a href="contacts.html">Contacts</a></li>
+						      <li><a href="profile.html">Profile</a></li>
+						    </ul>
+						  </li>
+						  <li><a><i class="fa fa-windows"></i> Extras <span class="fa fa-chevron-down"></span></a>
+						    <ul class="nav child_menu">
+						      <li><a href="page_403.html">403 Error</a></li>
+						      <li><a href="page_404.html">404 Error</a></li>
+						      <li><a href="page_500.html">500 Error</a></li>
+						      <li><a href="plain_page.html">Plain Page</a></li>
+						      <li><a href="login.html">Login Page</a></li>
+						      <li><a href="pricing_tables.html">Pricing Tables</a></li>
+						    </ul>
+						  </li>
+						  <li><a><i class="fa fa-sitemap"></i> Multilevel Menu <span class="fa fa-chevron-down"></span></a>
+						    <ul class="nav child_menu">
+						        <li><a href="#level1_1">Level One</a>
+						        <li><a>Level One<span class="fa fa-chevron-down"></span></a>
+						          <ul class="nav child_menu">
+						            <li class="sub_menu"><a href="level2.html">Level Two</a>
+						            </li>
+						            <li><a href="#level2_1">Level Two</a>
+						            </li>
+						            <li><a href="#level2_2">Level Two</a>
+						            </li>
+						          </ul>
+						        </li>
+						        <li><a href="#level1_2">Level One</a>
+						        </li>
+						    </ul>
+						  </li>                  
+						  <li><a href="javascript:void(0)"><i class="fa fa-laptop"></i> Landing Page <span class="label label-success pull-right">Coming Soon</span></a></li>
+						</ul>
+					</div>
+			  	</div>
+			    <!-- /sidebar menu -->
+
+			    <!-- /menu footer buttons -->
+			    <div class="sidebar-footer hidden-small">
+			      <a data-toggle="tooltip" data-original-title="Cài đặt" class="a__class__caiDat">
+			        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+			      </a>
+			      <a data-toggle="tooltip" data-original-title="Toàn màn hình" id="a__id__toanManHinh">
+			        <span id="span__id__toanManHinh" class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+			      </a>
+			      <a data-toggle="tooltip" data-original-title="Lên đầu trang" id="a__id__lenDauTrang">
+			        <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+			      </a>
+			      <a data-toggle="tooltip" data-original-title="Khoá menu" id="a__id__khoaMenu">
+			        <span id="span__id__khoaMenu" class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+			      </a>
+			      <a data-toggle="tooltip" data-original-title="Đăng xuất" href="../dang_nhap.html" id="a__id__dangXuat">
+			        <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+			      </a>
+			    </div>
+			    <!-- /menu footer buttons -->
+			  </div>
+			</div>
+
+			<!-- top navigation -->
+			<div class="top_nav" id="div__id__top_nav">
+			  <div class="nav_menu" id="div__id__nav_menu">
+			    <nav>
+			      <div class="nav toggle">
+			        <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+			      </div>
+
+			      <ul class="nav navbar-nav navbar-right">
+			        <li class="">
+			          <a href="javascript:void(0);" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+			            <img src="../resources/images/user.png" alt="Ảnh người dùng">User<span class=" fa fa-angle-down"></span>
+			          </a>
+			          <ul class="dropdown-menu dropdown-usermenu pull-right">
+			            <li><a href="javascript:;"> Profile</a></li>
+			            <li>
+			              <a href="javascript:;">
+			                <span class="badge bg-red pull-right">50%</span>
+			                <span>Settings</span>
+			              </a>
+			            </li>
+			            <li><a href="javascript:;">Help</a></li>
+			            <li><a href="../dang_nhap.html"><i class="fa fa-sign-out pull-right"></i> Đăng xuất</a></li>
+			          </ul>
+			        </li>
+
+			        <li role="presentation" class="dropdown">
+			          <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+			            <i class="fa fa-envelope-o"></i>
+			            <span class="badge bg-green">6</span>
+			          </a>
+			          <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+			            <li>
+			              <a>
+			                <span class="image"><img src="../resources/images/img.jpg" alt="Profile Image" /></span>
+			                <span>
+			                  <span>John Smith</span>
+			                  <span class="time">3 mins ago</span>
+			                </span>
+			                <span class="message">
+			                  Film festivals used to be do-or-die moments for movie makers. They were where...
+			                </span>
+			              </a>
+			            </li>
+			            <li>
+			              <a>
+			                <span class="image"><img src="../resources/images/img.jpg" alt="Profile Image" /></span>
+			                <span>
+			                  <span>John Smith</span>
+			                  <span class="time">3 mins ago</span>
+			                </span>
+			                <span class="message">
+			                  Film festivals used to be do-or-die moments for movie makers. They were where...
+			                </span>
+			              </a>
+			            </li>
+			            <li>
+			              <a>
+			                <span class="image"><img src="../resources/images/img.jpg" alt="Profile Image" /></span>
+			                <span>
+			                  <span>John Smith</span>
+			                  <span class="time">3 mins ago</span>
+			                </span>
+			                <span class="message">
+			                  Film festivals used to be do-or-die moments for movie makers. They were where...
+			                </span>
+			              </a>
+			            </li>
+			            <li>
+			              <a>
+			                <span class="image"><img src="../resources/images/img.jpg" alt="Profile Image" /></span>
+			                <span>
+			                  <span>John Smith</span>
+			                  <span class="time">3 mins ago</span>
+			                </span>
+			                <span class="message">
+			                  Film festivals used to be do-or-die moments for movie makers. They were where...
+			                </span>
+			              </a>
+			            </li>
+			            <li>
+			              <div class="text-center">
+			                <a>
+			                  <strong>See All Alerts</strong>
+			                  <i class="fa fa-angle-right"></i>
+			                </a>
+			              </div>
+			            </li>
+			          </ul>
+			        </li>
+			      </ul>
+			    </nav>
+			  </div>
+			</div>
+			<!-- /top navigation -->
+
+			<!-- page content -->
+			<div class="right_col" role="main" id="div__id__right_col">
+			  	<div class="">
+					<div class="row">
+						<!-- Form cập nhật chi tiết của tiêu chí [tên tiêu chí đánh giá chi tiết] -->
+					  	<div class="col-md-12 col-sm-12 col-xs-12" id="div__id__formCTCTCDGCT" style="display: none;">
+						    <div class="x_panel">
+						      	<div class="x_title">
+							        <h2 id="h2__id__formCTCTCDGCT">THÔNG TIN CHI TIẾT CỦA TIÊU CHÍ ĐÁNH GIÁ [TÊN TCDGCTCCT]</h2>
+							        <ul class="nav navbar-right panel_toolbox">
+							        	<li><a class="close-link"><i class="fa fa-close"></i></a>
+							    		</li>
+							          	<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+							          	</li>
+							        </ul>
+							        <div class="clearfix"></div>
+						      	</div>
+						    	<div class="x_content">
+						        	<form class="form-horizontal form-label-left" novalidate>
+						          		<div class="item form-group">
+						            		<label class="control-label col-md-3 col-sm-3 col-xs-12">Tên tiêu chí đánh giá</label>
+						           			<div class="col-md-6 col-sm-6 col-xs-12">
+						           				<input type="text" class="form-control col-md-7 col-xs-12" id="textBox__id__tenCTCTCDGCT" required pattern="alphanumeric" placeholder="eg...">
+						            		</div>
+						          		</div>
+							          	<div class="item form-group">
+							            	<label class="control-label col-md-3 col-sm-3 col-xs-12">Số điểm tối đa</label>
+						            		<div class="col-md-6 col-sm-6 col-xs-12">
+						            			<input type='number' class="form-control" required data-validate-minmax="1,[số điểm tối đa của tiêu chí cha]" id="number__id__soDiemCTCTCDGCT" placeholder="2"/>
+						            		</div>
+							          	</div>
+							          	<div class="ln_solid"></div>
+							          	<div class="form-group text-center">
+								            <div class="col-md-6 col-md-offset-3">
+								            	<button type="button" class="btn btn-success" data-toggle="tooltip" data-original-title="Cập nhật" id="button__id__capNhatCTCTCDGCT">
+								              		<i class="glyphicon glyphicon-ok"></i>
+								              	</button>
+								              	<button type="button" class="btn btn-danger" rel="tooltip" data-original-title="Huỷ" id="button__id__huyCTCTCDGCT">
+								              		<i class="glyphicon glyphicon-remove"></i>
+								              	</button>
+								            </div>
+							          	</div>
+						        	</form>
+						      	</div>
+						    </div>
+						</div>
+
+						<!-- Danh sách chi tiết của tiêu chí [tên tiêu chí đánh giá chi tiết] -->
+					  	<div class="col-md-12 col-sm-12 col-xs-12" id="div__id__danhSachCTCTCDGCT" style="display: none;">
+							<div class="x_panel">
+							  	<div class="x_title">
+							    	<h2 id="h2__id__danhSachCTCTCDGCT">DANH SÁCH TIÊU CHÍ ĐÁNH GIÁ CHI TIẾT CỦA TIÊU CHÍ [TÊN TCDGCTCCT]</h2>
+							    	<ul class="nav navbar-right panel_toolbox">
+							      		<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+							      		</li>
+							    	</ul>
+							    	<div class="clearfix"></div>
+							  	</div>
+						  		<div class="x_content" style="overflow-y: hidden;">
+						  			<div class="btn-group marginBottom10" id="div__id__button_group_TCDGCTCCT">
+						  				<button type="button" class="btn btn-primary" data-toggle="tooltip" data-original-title="Thêm một tiêu chí" id="button__id__themCTCTCDGCT"><i class="glyphicon glyphicon-plus"></i></button>
+							  			<button type="button" class="btn btn-danger" data-toggle="tooltip" data-original-title="Đóng danh sách" id="button__id__dongDanhSachTCDGCTCCT"><i class="glyphicon glyphicon-remove"></i></button>
+						  			</div>
+						  			<div class="row">
+						  				<div class="col-sm-12">
+						  					<table id="table__id__CTCTCDGCT" class="table table-striped table-bordered bulk_action">
+						                      	<thead>
+						                        	<tr>
+						                        		<th><input type="checkbox" id="checkbox__id__dtb_CTCTCDGCT_chkAll"></th>
+							                          	<th>#</th>
+							                          	<th>Tiêu tiêu chí</th>
+							                          	<th>Điểm đánh giá tối đa</th>
+							                          	<th>Thao tác</th>
+						                        	</tr>
+						                      	</thead>
+						                      	<tbody id="tbody__id__CTCTCDGCT">
+						                        	<tr>
+						                  				<td>
+															<input type="checkbox" data-checkbox-content="mã CTCTCDGCT" data-checkbox-content-name="tên CTCTCDGCT" data-checkbox-id="checkbox__data-checkbox-id__dtb_CTCTCDGCT_chk">
+														</td>
+						                  				<td></td>
+						                  				<td></td>
+						                  				<td>2</td>
+						                  				<td>
+						                  					<div class="btn-group">
+									                            <button class="btn btn-sm btn-default" type="button" data-toggle="tooltip" data-original-title="Sửa" data-button="suaCTCTCDGCT" data-button-id="mã CTCTCDGCT"><i class="glyphicon glyphicon-edit"></i></button>
+									                            <button class="btn btn-sm btn-default" type="button" data-toggle="tooltip" data-original-title="Xoá" data-button="xoaCTCTCDGCT" data-button-id="mã CTCTCDGCT" data-button-tenCTCTCDGCT=""><i class="glyphicon glyphicon-trash"></i></button>
+								                          	</div>
+						                  				</td>
+						                			</tr>
+						                      	</tbody>
+						                    </table>
+						  				</div>
+						  			</div>
+						  		</div>
+						  	</div>
+						</div>
+
+				        <!-- Form cập nhật tiêu chí [tên tiêu chí đánh giá chi tiết] -->
+					  	<div class="col-md-12 col-sm-12 col-xs-12" id="div__id__formTCDGCT" style="display: none;">
+						    <div class="x_panel">
+						      	<div class="x_title">
+							        <h2 id="h2__id__formTCDGCT">THÔNG TIN CÁC CHI TIẾT CỦA TIÊU CHÍ ĐÁNH GIÁ [TÊN TCDG]</h2>
+							        <ul class="nav navbar-right panel_toolbox">
+							        	<li><a class="close-link"><i class="fa fa-close"></i></a>
+							    		</li>
+							          	<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+							          	</li>
+							        </ul>
+							        <div class="clearfix"></div>
+						      	</div>
+						    	<div class="x_content">
+						        	<form class="form-horizontal form-label-left" novalidate>
+						          		<div class="item form-group">
+						            		<label class="control-label col-md-3 col-sm-3 col-xs-12">Tên tiêu chí đánh giá</label>
+						           			<div class="col-md-6 col-sm-6 col-xs-12">
+						           				<input type="text" class="form-control col-md-7 col-xs-12" id="textBox__id__tenTCDGCT" required pattern="alphanumeric" placeholder="eg...">
+						            		</div>
+						          		</div>
+							          	<div class="item form-group">
+							            	<label class="control-label col-md-3 col-sm-3 col-xs-12">Số điểm tối đa</label>
+						            		<div class="col-md-6 col-sm-6 col-xs-12">
+						            			<input type='number' class="form-control" required data-validate-minmax="1,[số điểm tối đa của tiêu chí cha]" id="number__id__soDiemTCDGCT" placeholder="2"/>
+						            		</div>
+							          	</div>
+							          	<div class="ln_solid"></div>
+							          	<div class="form-group text-center">
+								            <div class="col-md-6 col-md-offset-3">
+								            	<button type="button" class="btn btn-success" data-toggle="tooltip" data-original-title="Cập nhật" id="button__id__capNhatTCDGCT">
+								              		<i class="glyphicon glyphicon-ok"></i>
+								              	</button>
+								              	<button type="button" class="btn btn-danger" rel="tooltip" data-original-title="Huỷ" id="button__id__huyTCDGCT">
+								              		<i class="glyphicon glyphicon-remove"></i>
+								              	</button>
+								            </div>
+							          	</div>
+						        	</form>
+						      	</div>
+						    </div>
+						</div>
+
+						<!-- Danh sách chi tiết của tiêu chí [tên tiêu chí đánh giá tổng quát] -->
+					  	<div class="col-md-12 col-sm-12 col-xs-12" id="div__id__danhSachTCDGCT" style="display: none;">
+							<div class="x_panel">
+							  	<div class="x_title">
+							    	<h2 id="h2__id__danhSachTCDGCT">DANH SÁCH CÁC CHI TIẾT CỦA TIÊU CHÍ ĐÁNH GIÁ [TÊN TCDG CHA]</h2>
+							    	<ul class="nav navbar-right panel_toolbox">
+							      		<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+							      		</li>
+							    	</ul>
+							    	<div class="clearfix"></div>
+							  	</div>
+						  		<div class="x_content" style="overflow-y: hidden;">
+						  			<div class="btn-group marginBottom10" id="div__id__button_group_TCDGCT">
+						  				<button type="button" class="btn btn-primary" data-toggle="tooltip" data-original-title="Thêm một tiêu chí" id="button__id__themTCDGCT"><i class="glyphicon glyphicon-plus"></i></button>
+							  			<button type="button" class="btn btn-danger" data-toggle="tooltip" data-original-title="Đóng danh sách" id="button__id__dongDanhSachTCDGCT"><i class="glyphicon glyphicon-remove"></i></button>
+						  			</div>
+						  			<div class="row">
+						  				<div class="col-sm-12">
+						  					<table id="table__id__TCDGCT" class="table table-striped table-bordered bulk_action">
+						                      	<thead>
+						                        	<tr>
+						                        		<th><input type="checkbox" id="checkbox__id__dtb_TCDGCT_chkAll"></th>
+							                          	<th>#</th>
+							                          	<th>TIÊU CHÍ ĐÁNH GIÁ</th>
+							                          	<th>ĐIỂM ĐÁNH GIÁ TỐI ĐA</th>
+							                          	<th>THAO TÁC</th>
+						                        	</tr>
+						                      	</thead>
+						                      	<tbody id="tbody__id__TCDGCT">
+						                        	<tr>
+						                  				<td>
+															<input type="checkbox" data-checkbox-content="mã TCDGCT" data-checkbox-content-name="tên TCDGCT" data-checkbox-id="checkbox__data-checkbox-id__dtb_TCDGCT_chk">
+														</td>
+						                  				<td></td>
+						                  				<td></td>
+						                  				<td>2</td>
+						                  				<td>
+						                  					<div class="btn-group">
+									                            <button class="btn btn-sm btn-default" type="button" data-toggle="tooltip" data-original-title="Sửa" data-button="suaTCDGCT" data-button-id="mã TCDGCT"><i class="glyphicon glyphicon-edit"></i></button>
+									                            <button class="btn btn-sm btn-default" type="button" data-toggle="tooltip" data-original-title="Xoá" data-button="xoaTCDGCT" data-button-id="mã TCDGCT" data-button-tenTCDGCT=""><i class="glyphicon glyphicon-trash"></i></button>
+									                            <button class="btn btn-sm btn-default" type="button" data-toggle="tooltip" data-original-title="Xem các chi tiết của tiêu chí" data-button-id="xemCTCTCDGCT" data-button-maTCDGCT="mã TCDGCT" data-button-tenTCDGCT="tên TCDGCT"><i class="fa fa-list"></i></button>
+								                          	</div>
+						                  				</td>
+						                			</tr>
+						                      	</tbody>
+						                    </table>
+						  				</div>
+						  			</div>
+						  		</div>
+						  	</div>
+						</div>
+
+						<!-- Form cập nhật tiêu chí đánh giá tổng quát -->
+					  	<div class="col-md-12 col-sm-12 col-xs-12" id="div__id__formTCDG" style="display: none;">
+						    <div class="x_panel">
+						      	<div class="x_title">
+							        <h2>THÔNG TIN CÁC TIÊU CHÍ ĐÁNH GIÁ ĐIỂM RÈN LUYỆN TỔNG QUÁT</h2>
+							        <ul class="nav navbar-right panel_toolbox">
+							        	<li><a class="close-link"><i class="fa fa-close"></i></a>
+							    		</li>
+							          	<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+							          	</li>
+							        </ul>
+							        <div class="clearfix"></div>
+						      	</div>
+						    	<div class="x_content">
+						        	<form class="form-horizontal form-label-left" novalidate>
+						          		<div class="item form-group">
+						            		<label class="control-label col-md-3 col-sm-3 col-xs-12">Tên tiêu chí đánh giá</label>
+						           			<div class="col-md-6 col-sm-6 col-xs-12">
+						           				<input type="text" class="form-control col-md-7 col-xs-12" id="textBox__id__tenTCDG" required pattern="alphanumeric" placeholder="eg...">
+						            		</div>
+						          		</div>
+							          	<div class="item form-group">
+							            	<label class="control-label col-md-3 col-sm-3 col-xs-12">Số điểm tối đa</label>
+						            		<div class="col-md-6 col-sm-6 col-xs-12">
+						            			<input type='number' class="form-control" required data-validate-minmax="1,[số điểm tối đa của tiêu chí]" id="number__id__soDiemTCDG" placeholder="20"/>
+						            		</div>
+							          	</div>
+							          	<div class="ln_solid"></div>
+							          	<div class="form-group text-center">
+								            <div class="col-md-6 col-md-offset-3">
+								            	<button type="button" class="btn btn-success" data-toggle="tooltip" data-original-title="Cập nhật" id="button__id__capNhat">
+								              		<i class="glyphicon glyphicon-ok"></i>
+								              	</button>
+								              	<button type="button" class="btn btn-danger" rel="tooltip" data-original-title="Huỷ" id="button__id__huy">
+								              		<i class="glyphicon glyphicon-remove"></i>
+								              	</button>
+								            </div>
+							          	</div>
+						        	</form>
+						      	</div>
+						    </div>
+						</div>
+
+						<!-- Danh sách tiêu chí đánh giá tổng quát-->
+					  	<div class="col-md-12 col-sm-12 col-xs-12">
+							<div class="x_panel">
+							  	<div class="x_title">
+							    	<h2>DANH SÁCH TIÊU CHÍ ĐÁNH GIÁ ĐIỂM RÈN LUYỆN TỔNG QUÁT</h2>
+							    	<ul class="nav navbar-right panel_toolbox">
+							      		<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+							      		</li>
+							    	</ul>
+							    	<div class="clearfix"></div>
+							  	</div>
+						  		<div class="x_content" style="overflow-y: hidden;">
+						  			<div class="btn-group marginBottom10" id="div__id__button_group_TCDG">
+						  				<button type="button" class="btn btn-primary" data-toggle="tooltip" data-original-title="Thêm một tiêu chí" id="button__id__them"><i class="glyphicon glyphicon-plus"></i></button>
+						  			</div>
+						  			<div class="row">
+						  				<div class="col-sm-12">
+						  					<table id="table__id__TCDG" class="table table-striped table-bordered bulk_action">
+						                      	<thead>
+						                        	<tr>
+						                        		<th><input type="checkbox" id="checkbox__id__dtb_TCDG_chkAll"></th>
+							                          	<th>#</th>
+							                          	<th>TIÊU CHÍ ĐÁNH GIÁ</th>
+							                          	<th>ĐIỂM ĐÁNH GIÁ TỐI ĐA</th>
+							                          	<th>THAO TÁC</th>
+						                        	</tr>
+						                      	</thead>
+						                      	<tbody id="tbody__id__TCDG">
+						                        	<tr>
+						                  				<td>
+															<input type="checkbox" data-checkbox-content="mã TCDG" data-checkbox-content-name="tên TCDG" data-checkbox-id="checkbox__data-checkbox-id__dtb_TCDG_chk">
+														</td>
+						                  				<td></td>
+						                  				<td></td>
+						                  				<td>2</td>
+						                  				<td>
+						                  					<div class="btn-group">
+									                            <button class="btn btn-sm btn-default" type="button" data-toggle="tooltip" data-original-title="Sửa" data-button="sua" data-button-id="mã TCDG"><i class="glyphicon glyphicon-edit"></i></button>
+									                            <button class="btn btn-sm btn-default" type="button" data-toggle="tooltip" data-original-title="Xoá" data-button="xoa" data-button-id="mã TCDG" data-button-tenTCDG=""><i class="glyphicon glyphicon-trash"></i></button>
+									                            <button class="btn btn-sm btn-default" type="button" data-toggle="tooltip" data-original-title="Xem các chi tiết của tiêu chí" data-button-id="xemCT" data-button-maTCDG="mã TCDG" data-button-tenTCDG="tên TCDG"><i class="fa fa-list"></i></button>
+								                          	</div>
+						                  				</td>
+						                			</tr>
+						                      	</tbody>
+						                    </table>
+						  				</div>
+						  			</div>
+						  		</div>
+						  	</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /page content -->
+			<!-- footer content -->
+	        <footer style="text-align: center;">
+	          <div class="pull-center">
+	            <h1><i class="fa fa-paw"></i> Hệ Thống Quản Lý Học Tập Sinh Viên!</h1>
+	          	<p> Khoa Công Nghệ Thông Tin - Đại học An Giang.</p>
+	          	<p>©2019 All Rights Reserved.</p>
+	          </div>
+	          <div class="clearfix"></div>
+	        </footer>
+	        <!-- /footer content -->
+	      </div>
+    </div>
+
+    <!-- Phần chung -->
+    <!-- jQuery -->
+    <script src="../resources/js/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../resources/bootstraps/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- NProgress -->
+    <script src="../resources/bootstraps/nprogress/nprogress.js"></script>
+
+    <!-- jQuery custom content scroller -->
+    <script src="../resources/bootstraps/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <!-- ALERTIFY JS -->
+    <script src="../resources/bootstraps/alertifyjs/alertify.min.js"></script>
+
+    <!-- Phần riêng -->
+    <!-- FastClick -->
+	<script src="../resources/js/fastclick/lib/fastclick.js"></script>
+	<!-- validator -->
+	<script src="../resources/bootstraps/validator/validator.js"></script>
+	<!-- Datatables -->
+	<script src="../resources/js/datatables.net/js/jquery.dataTables.min.js"></script>
+	<script src="../resources/bootstraps/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+	<script src="../resources/js/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+	<script src="../resources/bootstraps/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+	<script src="../resources/js/datatables.net-buttons/js/buttons.flash.min.js"></script>
+	<script src="../resources/js/datatables.net-buttons/js/buttons.html5.min.js"></script>
+	<script src="../resources/js/datatables.net-buttons/js/buttons.print.min.js"></script>
+	<script src="../resources/js/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+	<script src="../resources/js/pdfmake/build/pdfmake.min.js"></script>
+	<script src="../resources/js/pdfmake/build/vfs_fonts.js"></script>
+
+    <!-- Phần chung -->
+    <!-- Custom Theme Scripts -->
+    <script src="../resources/js/custom.min.js"></script>
+    <!-- Phần riêng -->
+    <!-- Các hàm dùng chung trong project -->
+    <script src="../resources/js/jsForViews/common.js"></script>
+    <!-- Khởi tạo side bar -->
+    <script src="../resources/js/jsForViews/khoi_tao_side_bar.js"></script>
+    <!-- Khởi tạo Form validate -->
+    <script src="../resources/js/jsForViews/khoi_tao_form_validator.js"></script>
+    <!-- Khởi tạo các chức năng thanh công cụ menu -->
+    <script src="../resources/js/jsForViews/thanh_cong_cu_menu.js"></script>
+	<!-- Khởi tạo data table -->
+    <script src="../resources/js/jsForViews/hanh_chinh/tieu_chi_danh_gia_diem_ren_luyen/0_khoi_tao_dataTable_TCDGDRL.js"></script>
+    <!-- Khởi tạo sự kiện check record table -->
+    <script src="../resources/js/jsForViews/hanh_chinh/tieu_chi_danh_gia_diem_ren_luyen/1_checkbox_table_TCDGDRL.js"></script>
+    <!-- Khởi tạo sự kiện clcik nút thêm mới một tiêu chí đánh giá điểm rèn luyện -->
+    <script src="../resources/js/jsForViews/hanh_chinh/tieu_chi_danh_gia_diem_ren_luyen/2_nut_them_TCDGDRL.js"></script>
+    <!-- Khởi tạo sự kiện click nút mở form cập nhật tiêu chí đánh giá điểm rèn luyện -->
+    <script src="../resources/js/jsForViews/hanh_chinh/tieu_chi_danh_gia_diem_ren_luyen/3_nut_cap_nhat_tren_table.js"></script>
+    <!-- Khởi tạo sự kiện click nút đóng form cập nhật / thêm mới tiêu chí đánh giá điểm rèn luyện-->
+    <script src="../resources/js/jsForViews/hanh_chinh/tieu_chi_danh_gia_diem_ren_luyen/4_nut_huy_tren_form.js"></script>
+    <!-- Khởi tạo sự kiện click nút xem danh sách chi tiết của tiêu chí đánh giá điểm rèn luyện-->
+    <script src="../resources/js/jsForViews/hanh_chinh/tieu_chi_danh_gia_diem_ren_luyen/5_xem_danh_sach_TCDGCT.js"></script>
+    <!-- Khởi tạo sự kiện click nút đóng danh sách chi tiết của tiêu chí đánh giá điểm rèn luyện-->
+    <script src="../resources/js/jsForViews/hanh_chinh/tieu_chi_danh_gia_diem_ren_luyen/6_dong_danh_sach_TCDGCT.js"></script>
+    <!-- Khởi tạo sự kiện click nút xem sách chi tiết của tiêu chí đánh giá điểm rèn luyện chi tiết-->
+    <script src="../resources/js/jsForViews/hanh_chinh/tieu_chi_danh_gia_diem_ren_luyen/7_nut_xem_danh_ct_tcdgdrlct.js"></script>
+    <!-- Khởi tạo tooltip -->
+    <script src="../resources/js/jsForViews/khoi_tao_tooltip.js"></script>
+  </body>
+</html>
